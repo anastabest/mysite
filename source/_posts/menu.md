@@ -8,16 +8,16 @@ tags:
 
 
 ## ABOUT US
-- [About](/about)
-- [About team](/aboutTeam)
+- [About](/mysite/about)
+- [About team](/mysite/aboutTeam)
 
 ## PRODUCTS
-- [Gift Certificate](/products)
+- [Gift Certificate](/mysite/products)
 - this unordered list will find H2
 
 ### PROMOTIONS
 
-- [Products](/products)
+- [Products](/mysite/products)
 - this unordered list will find H3
 
 
@@ -36,3 +36,6 @@ tags:
 
 - find nearest header
 - this unordered list will find H6
+
+# Java Script 
+
