@@ -1,27 +1,24 @@
----
-title: menu 
+title: menu
 date: 2020-03-05 17:30:03
 tags:
 ---
-
 # MENU WEBSITE
 
 
 # Java Script
-- [About](/mysite/about)
-- [Functions and events](/mysite/Java Scripts Functions and Events)
+- [about](/mysite/about)
+- [functions and events](/mysite/JavaScriptFunctionsandEvents)
+- [1](/mysite/2)
 
 
 # HEXO
-- [Diploy.git](/musite/deploy.git)
+- [diploy.git](/musite/deploy.git)
 
 # Random Notes 
-- [Random notes](/mysite/randomNotes)
+- [random notes](/mysite/randomNotes)
 
 
 
 
  
-# Admin 
-
-
+# Admin
