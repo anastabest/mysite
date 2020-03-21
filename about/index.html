@@ -11,7 +11,7 @@
 
     <title>
         
-          About me - BLOG LEARNING PROGRAMMING
+          методов  getElementById(). - BLOG LEARNING PROGRAMMING
         
     </title>
 
@@ -59,14 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
     <div class="book-menu">
   <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="Java-Script"><a href="#Java-Script" class="headerlink" title="Java Script"></a>Java Script</h1><ul>
-<li><a href="/mysite/about">About</a></li>
-<li>[Functions and events](/mysite/Java Scripts Functions and Events)</li>
+<li><a href="/mysite/about">about</a></li>
+<li><a href="/mysite/JavaScriptFunctionsandEvents">functions and events</a></li>
+<li><a href="/mysite/2">1</a></li>
 </ul>
 <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1><ul>
-<li><a href="/musite/deploy.git">Diploy.git</a></li>
+<li><a href="/musite/deploy.git">diploy.git</a></li>
 </ul>
 <h1 id="Random-Notes"><a href="#Random-Notes" class="headerlink" title="Random Notes"></a>Random Notes</h1><ul>
-<li><a href="/mysite/randomNotes">Random notes</a></li>
+<li><a href="/mysite/randomNotes">random notes</a></li>
 </ul>
 <h1 id="Admin"><a href="#Admin" class="headerlink" title="Admin"></a>Admin</h1>
 </div>
@@ -94,8 +95,31 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="book-content">
           
 <article id="page">
-  <h1>About me</h1>
-  <h2 id="Hello-about-page"><a href="#Hello-about-page" class="headerlink" title="Hello about page"></a>Hello about page</h2>
+  <h1>методов  getElementById().</h1>
+  <h2 id="Методов-JavaScript-HTML-является-getElementById"><a href="#Методов-JavaScript-HTML-является-getElementById" class="headerlink" title="Методов JavaScript HTML является getElementById()."></a>Методов JavaScript HTML является getElementById().</h2><ul>
+<li><p>Метод используется для «поиска» HTML-элемента (с id = «demo») и изменения элемента content ( innerHTML) на «Hello JavaScript»</p>
+<ul>
+<li><h2 id="пример"><a href="#пример" class="headerlink" title="пример"></a>пример</h2><pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript can change HTML content.&lt;/p&gt;
+
+&lt;button type=&quot;button&quot; onclick=&apos;document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;&apos;&gt;Click Me!&lt;/button&gt;</code></pre></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>при нажатии кнопки меняется текст;</li>
+</ul>
+<h1 id="JavaScript-может-изменять-значения-атрибутов-HTML"><a href="#JavaScript-может-изменять-значения-атрибутов-HTML" class="headerlink" title="JavaScript может изменять значения атрибутов HTML"></a>JavaScript может изменять значения атрибутов HTML</h1><pre><code>&lt;button onclick=&quot;document.getElementById(&apos;myImage&apos;).src=&apos;pic_bulbon.gif&apos;&quot;&gt;Turn on the light&lt;/button&gt;
+
+&lt;img id=&quot;myImage&quot; src=&quot;pic_bulboff.gif&quot; style=&quot;width:100px&quot;&gt;
+
+&lt;button onclick=&quot;document.getElementById(&apos;myImage&apos;).src=&apos;pic_bulboff.gif&apos;&quot;&gt;Turn off the light&lt;/button&gt;</code></pre><p>– В этом примере JavaScript изменяет значение src атрибута (source) <img>тега:</p>
+<h1 id="Изменение-стиля-элемента-HTML-это-вариант-изменения-атрибута-HTML"><a href="#Изменение-стиля-элемента-HTML-это-вариант-изменения-атрибута-HTML" class="headerlink" title="Изменение стиля элемента HTML - это вариант изменения атрибута HTML"></a>Изменение стиля элемента HTML - это вариант изменения атрибута HTML</h1><pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;
+
+&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.fontSize=&apos;35px&apos;&quot;&gt;Click Me!&lt;/button&gt;</code></pre><h1 id="Может-скрывать-элементы"><a href="#Может-скрывать-элементы" class="headerlink" title="Может скрывать элементы"></a>Может скрывать элементы</h1><pre><code>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;none&apos;&quot;&gt;Click Me!&lt;/button&gt;</code></pre><h1 id="Может-отображать-элементы"><a href="#Может-отображать-элементы" class="headerlink" title="Может отображать элементы"></a>Может отображать элементы</h1><pre><code>&lt;p&gt;JavaScript can show hidden HTML elements.&lt;/p&gt;
+
+&lt;p id=&quot;demo&quot; style=&quot;display:none&quot;&gt;Hello JavaScript!&lt;/p&gt;
+
+&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;block&apos;&quot;&gt;Click Me!&lt;/button&gt;</code></pre>
 </article>
 
 <div id="paginator">
