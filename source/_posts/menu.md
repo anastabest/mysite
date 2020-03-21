@@ -1,5 +1,5 @@
 ---
-title: menu website
+title: menu 
 date: 2020-03-05 17:30:03
 tags:
 ---
@@ -7,35 +7,21 @@ tags:
 # MENU WEBSITE
 
 
-## ABOUT US
+# Java Script
 - [About](/mysite/about)
-- [About team](/mysite/aboutTeam)
+- [Functions and events](/mysite/Java Scripts Functions and Events)
 
-## PRODUCTS
-- [Gift Certificate](/mysite/products)
-- this unordered list will find H2
 
-### PROMOTIONS
+# HEXO
+- [Diploy.git](/musite/deploy.git)
 
-- [Products](/mysite/products)
-- this unordered list will find H3
+# Random Notes 
+- [Random notes](/mysite/randomNotes)
 
 
 
-#### ENQUIRY
 
-- find nearest header
-- this unordered list will find H4
+ 
+# Admin 
 
-##### NEWS &EVENTS
-
-- find nearest header
-- this unordered list will find H5
-
-###### CONTACT US
-
-- find nearest header
-- this unordered list will find H6
-
-# Java Script 
 
