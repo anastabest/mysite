@@ -1,9 +1,9 @@
 ---
-title:  методов  getElementById().
+title:  метод  getElementById().
 
 date: 2020-02-28 11:47:26
 ---
-## Методов JavaScript HTML является getElementById().
+## Метод JavaScript HTML является getElementById().
 
 
 - Метод используется для «поиска» HTML-элемента (с id = «demo») и изменения элемента content ( innerHTML) на «Hello JavaScript»
@@ -33,7 +33,7 @@ date: 2020-02-28 11:47:26
 # Может скрывать элементы
         <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
 
-        
+
 
 # Может отображать элементы
         <p>JavaScript can show hidden HTML elements.</p>

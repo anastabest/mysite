@@ -5,20 +5,21 @@ tags:
 # MENU WEBSITE
 
 
-# Java Script
+# JAVA SCRIPT
 - [about](/mysite/about)
-- [functions and events](/mysite/JavaScriptFunctionsandEvents)
-- [1](/mysite/2)
+- [functions](/mysite/functions)
+
+
 
 
 # HEXO
-- [diploy.git](/musite/deploy.git)
+- [diploy.git](/mysite/deploy.git)
 
-# Random Notes 
+# RANDOM NOTES 
 - [random notes](/mysite/randomNotes)
 
 
 
 
  
-# Admin
+# ADMIN
