@@ -59,11 +59,20 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
     <div class="book-menu">
   <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
-<li><a href="/mysite/about">about</a></li>
-<li><a href="/mysite/functions">functions</a></li>
-</ul>
-<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1><ul>
-<li><a href="/mysite/deploy.git">diploy.git</a></li>
+<li><p><a href="/mysite/about/">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions/">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display/">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements/">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords/">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values">JS Values</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
 </ul>
 <h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
 <li><a href="/mysite/randomNotes">random notes</a></li>
@@ -97,12 +106,9 @@ document.addEventListener('DOMContentLoaded', function () {
   <h1>метод  getElementById().</h1>
   <h2 id="Метод-JavaScript-HTML-является-getElementById"><a href="#Метод-JavaScript-HTML-является-getElementById" class="headerlink" title="Метод JavaScript HTML является getElementById()."></a>Метод JavaScript HTML является getElementById().</h2><ul>
 <li><p>Метод используется для «поиска» HTML-элемента (с id = «demo») и изменения элемента content ( innerHTML) на «Hello JavaScript»</p>
-<ul>
-<li><h2 id="пример"><a href="#пример" class="headerlink" title="пример"></a>пример</h2><pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript can change HTML content.&lt;/p&gt;
+<h2 id="пример"><a href="#пример" class="headerlink" title="пример"></a>пример</h2><pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript can change HTML content.&lt;/p&gt;
 
 &lt;button type=&quot;button&quot; onclick=&apos;document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;&apos;&gt;Click Me!&lt;/button&gt;</code></pre></li>
-</ul>
-</li>
 </ul>
 <ul>
 <li>при нажатии кнопки меняется текст;</li>
@@ -111,10 +117,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 &lt;img id=&quot;myImage&quot; src=&quot;pic_bulboff.gif&quot; style=&quot;width:100px&quot;&gt;
 
-&lt;button onclick=&quot;document.getElementById(&apos;myImage&apos;).src=&apos;pic_bulboff.gif&apos;&quot;&gt;Turn off the light&lt;/button&gt;</code></pre><p>– В этом примере JavaScript изменяет значение src атрибута (source) <img>тега:</p>
+&lt;button onclick=&quot;document.getElementById(&apos;myImage&apos;).src=&apos;pic_bulboff.gif&apos;&quot;&gt;Turn off the light&lt;/button&gt;</code></pre><ul>
+<li><p>В этом примере JavaScript изменяет значение src атрибута (source) <img>тега:</p>
 <h1 id="Изменение-стиля-элемента-HTML-это-вариант-изменения-атрибута-HTML"><a href="#Изменение-стиля-элемента-HTML-это-вариант-изменения-атрибута-HTML" class="headerlink" title="Изменение стиля элемента HTML - это вариант изменения атрибута HTML"></a>Изменение стиля элемента HTML - это вариант изменения атрибута HTML</h1><pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;
 
-&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.fontSize=&apos;35px&apos;&quot;&gt;Click Me!&lt;/button&gt;</code></pre><h1 id="Может-скрывать-элементы"><a href="#Может-скрывать-элементы" class="headerlink" title="Может скрывать элементы"></a>Может скрывать элементы</h1><pre><code>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;none&apos;&quot;&gt;Click Me!&lt;/button&gt;</code></pre><h1 id="Может-отображать-элементы"><a href="#Может-отображать-элементы" class="headerlink" title="Может отображать элементы"></a>Может отображать элементы</h1><pre><code>&lt;p&gt;JavaScript can show hidden HTML elements.&lt;/p&gt;
+&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.fontSize=&apos;35px&apos;&quot;&gt;Click Me!&lt;/button&gt;</code></pre></li>
+</ul>
+<h1 id="Может-скрывать-элементы"><a href="#Может-скрывать-элементы" class="headerlink" title="Может скрывать элементы"></a>Может скрывать элементы</h1><pre><code>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;none&apos;&quot;&gt;Click Me!&lt;/button&gt;</code></pre><h1 id="Может-отображать-элементы"><a href="#Может-отображать-элементы" class="headerlink" title="Может отображать элементы"></a>Может отображать элементы</h1><pre><code>&lt;p&gt;JavaScript can show hidden HTML elements.&lt;/p&gt;
 
 &lt;p id=&quot;demo&quot; style=&quot;display:none&quot;&gt;Hello JavaScript!&lt;/p&gt;
 
