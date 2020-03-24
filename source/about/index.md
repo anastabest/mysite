@@ -8,7 +8,7 @@ date: 2020-02-28 11:47:26
 
 - Метод используется для «поиска» HTML-элемента (с id = «demo») и изменения элемента content ( innerHTML) на «Hello JavaScript»
 
-  * ## пример
+   ## пример
 
         <p id="demo">JavaScript can change HTML content.</p>
 
@@ -24,7 +24,7 @@ date: 2020-02-28 11:47:26
 
         <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
 
--- В этом примере JavaScript изменяет значение src атрибута (source) <img>тега:
+* В этом примере JavaScript изменяет значение src атрибута (source) <img>тега:
 # Изменение стиля элемента HTML - это вариант изменения атрибута HTML
         <p id="demo">JavaScript can change the style of an HTML element.</p>
 

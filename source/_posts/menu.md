@@ -6,12 +6,16 @@ tags:
 
 
 # JAVA SCRIPT
-- [about](/mysite/about)
-- [functions](/mysite/functions)
+- [JS About](/mysite/about/)
 
+- [JS Functions](/mysite/functions/)
 
+- [JS Display](/mysite/display/)
 
+- [JS Statements](/mysite/statements/)
 
+- [JS Keywords](/mysite/keywords/)
+- [JS Values](/mysite/values)
 # HEXO
 - [diploy.git](/mysite/deploy.git)
 
