@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          Data Types - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about/">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions/">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display/">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements/">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords/">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>Data Types</h1>
+  <h2 id="Переменные-JavaScript-числа-строки-объекты-и-многое-другое"><a href="#Переменные-JavaScript-числа-строки-объекты-и-многое-другое" class="headerlink" title="Переменные JavaScript : числа, строки, объекты и многое другое:"></a>Переменные JavaScript : числа, строки, объекты и многое другое:</h2><pre><code>var length = 16;                               // Number
+var lastName = &quot;Johnson&quot;;                      // String
+var x = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;};    // Object</code></pre><h2 id="Объекты-могут-быть-очищены-путем-установки-значения-в-NULL"><a href="#Объекты-могут-быть-очищены-путем-установки-значения-в-NULL" class="headerlink" title="Объекты могут быть очищены путем установки значения в NULL."></a>Объекты могут быть очищены путем установки значения в NULL.</h2><pre><code>&lt;script&gt;
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
+person = null;
+document.getElementById(&quot;demo&quot;).innerHTML = typeof person;
+&lt;/script&gt;                                                   // object</code></pre><h3 id="Концепция"><a href="#Концепция" class="headerlink" title="Концепция:"></a>Концепция:</h3><p>— При добавлении числа и строки JavaScript будет обрабатывать число как строку</p>
+<hr>
+<pre><code>&lt;script&gt;
+var x = 16 + &quot;Volvo&quot;;
+document.getElementById(&quot;demo&quot;).innerHTML = x;
+&lt;/script&gt;                                      
+                                                // 16Volvo</code></pre><hr>
+<pre><code>&lt;script&gt;
+var x = &quot;Volvo&quot; + 16;
+document.getElementById(&quot;demo&quot;).innerHTML = x;
+&lt;/script&gt;                                       // Volvo16                            </code></pre><p>——JavaScript оценивает выражения слева направо. Разные последовательности могут давать разные результаты:</p>
+<pre><code>&lt;script&gt;
+var x = 16 + 4 + &quot;Volvo&quot;;
+document.getElementById(&quot;demo&quot;).innerHTML = x;
+&lt;/script&gt;  
+                                    // 20Volvo</code></pre><hr>
+<pre><code>&lt;script&gt;
+var x = &quot;Volvo&quot; + 16 + 4;
+document.getElementById(&quot;demo&quot;).innerHTML = x;
+&lt;/script&gt;                                         // Volvo164</code></pre><h1 id="Типы-JavaScript-являются-динамическими"><a href="#Типы-JavaScript-являются-динамическими" class="headerlink" title="Типы JavaScript являются динамическими"></a>Типы JavaScript являются динамическими</h1><hr>
+<p><em>одна и та же переменная может <strong>использоваться для хранения разных типов данных:</strong></em></p>
+<pre><code>&lt;script&gt;
+var x;         // Now x is undefined
+x = 5;         // Now x is a Number
+x = &quot;John&quot;;      // Now x is a String
+
+document.getElementById(&quot;demo&quot;).innerHTML = x;
+&lt;/script&gt;</code></pre><h1 id="Строки-JavaScript"><a href="#Строки-JavaScript" class="headerlink" title="Строки JavaScript"></a>Строки JavaScript</h1><p>Строка (или текстовая строка) - это серия символов</p>
+<pre><code>&lt;script&gt;
+var carName1 = &quot;Volvo XC60&quot;;           // Using double quotes
+var carName2 = &apos;Volvo XC60&apos;;           // Using single quotes
+
+document.getElementById(&quot;demo&quot;).innerHTML =
+carName1 + &quot;&lt;br&gt;&quot; + 
+carName2; 
+&lt;/script&gt;                                  // Volvo XC60
+                                           // Volvo XC60 </code></pre><ul>
+<li>JavaScript имеет только один тип чисел.</li>
+<li>Числа могут быть записаны с десятичными знаками или без них</li>
+</ul>
+<h1 id="JavaScript-Booleans"><a href="#JavaScript-Booleans" class="headerlink" title="JavaScript Booleans"></a>JavaScript Booleans</h1><p>Логические значения могут иметь только два значения:<br>true или false.                                              </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; 5; </span><br><span class="line">var y &#x3D; 5;                                      &#x2F;&#x2F; Returns true                                           </span><br><span class="line">var z &#x3D; 6;                                       &#x2F;&#x2F; Returns false</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">(x &#x3D;&#x3D; y) + &quot;&lt;br&gt;&quot; + (x &#x3D;&#x3D; z);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-03-31</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>
