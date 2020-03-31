@@ -15,7 +15,10 @@ tags:
 - [JS Statements](/mysite/statements/)
 
 - [JS Keywords](/mysite/keywords/)
+
 - [JS Values](/mysite/values)
+
+- [JS Data Types](/mysite/DataTypes)
 # HEXO
 - [diploy.git](/mysite/deploy.git)
 
