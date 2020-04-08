@@ -16,9 +16,18 @@ tags:
 
 - [JS Keywords](/mysite/keywords/)
 
-- [JS Values](/mysite/values)
+- [JS Values](/mysite/values/)
 
-- [JS Data Types](/mysite/DataTypes)
+- [JS Data Types](/mysite/DataTypes/)
+
+- [JS Arrays](/mysite/arrays/)
+
+- [JS Objects](/mysite/objects/)
+
+- [JS Events](/mysite/events/)
+
+
+
 # HEXO
 - [diploy.git](/mysite/deploy.git)
 
