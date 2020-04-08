@@ -24,7 +24,9 @@ tags:
 
 - [JS Objects](/mysite/objects/)
 
-- [JS Events](/mysite/events/)
+- [JS Events](/mysite/Events/)
+
+- [JS Strings](/mysite/Strings/)
 
 
 
