@@ -6,33 +6,33 @@ tags:
 
 
 # JAVA SCRIPT
-- [JS About](/mysite/about/)
+- [JS About](/mysite/About/)
 
-- [JS Functions](/mysite/functions/)
+- [JS Functions](/mysite/Functions/)
 
-- [JS Display](/mysite/display/)
+- [JS Display](/mysite/Display/)
 
-- [JS Statements](/mysite/statements/)
+- [JS Statements](/mysite/Statements/)
 
-- [JS Keywords](/mysite/keywords/)
+- [JS Keywords](/mysite/Keywords/)
 
-- [JS Values](/mysite/values/)
+- [JS Values](/mysite/Values/)
 
 - [JS Data Types](/mysite/DataTypes/)
 
-- [JS Arrays](/mysite/arrays/)
+- [JS Arrays](/mysite/Arrays/)
 
-- [JS Objects](/mysite/objects/)
+- [JS Objects](/mysite/Objects/)
 
 - [JS Events](/mysite/Events/)
 
 - [JS Strings](/mysite/Strings/)
 
-- [JS String Methods](/mysite/stringMethods/)
+- [JS String Methods](/mysite/StringMethods/)
 
 - [JS Numbers](/mysite/Numbers)
 
-- [JS Number Methods](/mysite/numberMethods/)
+- [JS Number Methods](/mysite/NumberMethods/)
 # HEXO
 - [diploy.git](/mysite/deploy.git)
 
