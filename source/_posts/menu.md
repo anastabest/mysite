@@ -28,8 +28,11 @@ tags:
 
 - [JS Strings](/mysite/Strings/)
 
+- [JS String Methods](/mysite/stringMethods/)
 
+- [JS Numbers](/mysite/Numbers)
 
+- [JS Number Methods](/mysite/numberMethods/)
 # HEXO
 - [diploy.git](/mysite/deploy.git)
 
