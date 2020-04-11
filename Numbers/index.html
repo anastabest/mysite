@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          Numbers - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about/">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions/">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display/">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements/">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords/">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values/">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>Numbers</h1>
+  <h2 id="NaN-не-число"><a href="#NaN-не-число" class="headerlink" title="NaN - не число"></a>NaN - не число</h2><p>NaN является зарезервированным словом JavaScript, указывающим, что число не является допустимым числом.</p>
+<p>Попытка сделать арифметику с нечисловой строкой приведет к NaN(не число):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; 100 &#x2F; &quot;Apple&quot;;    &#x2F;&#x2F;&#x2F;&#x2F; x will be NaN (Not a Number)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>Однако, если строка содержит числовое значение, результатом будет число</p>
+<ul>
+<li>Вы можете использовать глобальную функцию JavaScript, isNaN()чтобы узнать, является ли значение числом:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; 100 &#x2F; &quot;Apple&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; isNaN(x); &#x2F;&#x2F;true</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
+<li>Берегись NaN. Если вы используете NaNв математической операции, результат также будет NaN:</li>
+</ul>
+<hr>
+<ul>
+<li>Или результатом может быть конкатенация:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; NaN;</span><br><span class="line">var y &#x3D; &quot;5&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; x + y;    &#x2F;&#x2F;NaN5</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
+<li><code>NaN</code> это число: <code>typeof</code> NaN возвращает number:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; NaN;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; typeof x;   &#x2F;&#x2F;number</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1></li>
+</ul>
+<h1 id="Бесконечность-Infinity"><a href="#Бесконечность-Infinity" class="headerlink" title="Бесконечность  Infinity"></a>Бесконечность  Infinity</h1><p><code>Infinity</code>(или <code>-Infinity</code>) - это значение, которое JavaScript вернет, если вы вычислите число за пределами максимально возможного числа.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var myNumber &#x3D; 2; </span><br><span class="line">var txt &#x3D; &quot;&quot;;</span><br><span class="line">while (myNumber !&#x3D; Infinity) &#123;</span><br><span class="line">   myNumber &#x3D; myNumber * myNumber;</span><br><span class="line">   txt &#x3D; txt + myNumber + &quot;&lt;br&gt;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; txt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>//</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">16</span><br><span class="line">256</span><br><span class="line">65536</span><br><span class="line">4294967296</span><br><span class="line">18446744073709552000</span><br><span class="line">3.402823669209385e+38</span><br><span class="line">1.157920892373162e+77</span><br><span class="line">1.3407807929942597e+154</span><br><span class="line">Infinity</span><br></pre></td></tr></table></figure>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><ul>
+<li><code>Infinity</code> это число: <code>typeof Infinity</code> возвращает number.</li>
+</ul>
+<h1 id="Числа-могут-быть-объектами"><a href="#Числа-могут-быть-объектами" class="headerlink" title="Числа могут быть объектами"></a>Числа могут быть объектами</h1>
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-09</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>

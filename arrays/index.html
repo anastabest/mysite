@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          JS Arrays - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about/">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions/">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display/">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements/">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords/">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values/">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>JS Arrays</h1>
+  <h2 id="Массивы-JavaScript"><a href="#Массивы-JavaScript" class="headerlink" title="Массивы JavaScript"></a>Массивы JavaScript</h2><h2 id="Создание-массива"><a href="#Создание-массива" class="headerlink" title="Создание массива"></a><code>Создание массива</code></h2><p>Синтаксис:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var array_name &#x3D; [item1, item2, ...];</span><br></pre></td></tr></table></figure>
+<p>Массивы JavaScript используются для хранения нескольких значений в одной переменной.<br>1.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var cars &#x3D; [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; cars;  &#x2F;&#x2F;Saab,Volvo,BMW</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var cars &#x3D; [</span><br><span class="line">  &quot;Saab&quot;,</span><br><span class="line">  &quot;Volvo&quot;,</span><br><span class="line">  &quot;BMW&quot;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+<h2 id="Использование-ключевого-слова-JavaScript-new"><a href="#Использование-ключевого-слова-JavaScript-new" class="headerlink" title="Использование ключевого слова JavaScript new"></a><code>Использование ключевого слова JavaScript new</code></h2><p>создается массив и присваиваются ему значения:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var cars &#x3D; new Array(&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; cars;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>Массив - это специальная переменная, которая может содержать более одного значения за раз.<br><em>Если у вас есть список элементов (например, список имен автомобилей), хранение автомобилей в отдельных переменных может выглядеть следующим образом:</em></p>
+<ul>
+<li>var car1 = “Saab”;</li>
+<li>var car2 = “Volvo”;</li>
+<li>var car3 = “BMW”;<br><code>Доступ к элементам массива</code></li>
+</ul>
+<hr>
+<p>Вы получаете доступ к элементу массива, ссылаясь на <strong>номер индекса .</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var cars &#x3D; [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; cars[0];  &#x2F;&#x2F;Saab</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Изменение-элемента-массива"><a href="#Изменение-элемента-массива" class="headerlink" title="Изменение элемента массива"></a><code>Изменение элемента массива</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var cars &#x3D; [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</span><br><span class="line">cars[0] &#x3D; &quot;Opel&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; cars;  &#x2F;&#x2F;Opel,VOlVO,BMW</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Доступ-к-полному-массиву"><a href="#Доступ-к-полному-массиву" class="headerlink" title="Доступ к полному массиву"></a><code>Доступ к полному массиву</code></h2><p>С JavaScript, полный массив может быть доступен путем обращения к имени массива:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">script&gt;</span><br><span class="line">var cars &#x3D; [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; cars;  &#x2F;&#x2F;Saab,Volvo,BMw</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Массивы-являются-объектами"><a href="#Массивы-являются-объектами" class="headerlink" title="Массивы являются объектами"></a><code>Массивы являются объектами</code></h2><p>Массивы - это особый тип объектов. typeofОператор в JavaScript возвращает «объект» для массивов.</p>
+<ul>
+<li>Объекты используют имена для доступа к своим «членам». В этом примере person.firstName возвращает John:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var person &#x3D; &#123;firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:46&#125;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; person[&quot;firstName&quot;];  &#x2F;&#x2F;John</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+Элементы массива могут быть объектами</li>
+</ul>
+<hr>
+<p>Переменные JavaScript могут быть объектами. Массивы - это особые виды объектов.</p>
+<p>Из-за этого вы можете иметь переменные разных типов в одном массиве.</p>
+<p>Вы можете иметь объекты в массиве. Вы можете иметь функции в массиве. Вы можете иметь массивы в массиве:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">myArray[0] &#x3D; Date.now;</span><br><span class="line">myArray[1] &#x3D; myFunction;</span><br><span class="line">myArray[2] &#x3D; myCars;</span><br></pre></td></tr></table></figure>
+<h2 id="Свойства-и-методы-массива"><a href="#Свойства-и-методы-массива" class="headerlink" title="Свойства и методы массива"></a><code>Свойства и методы массива</code></h2><p>сила массивов JavaScript - это встроенные свойства и методы массива:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var x &#x3D; cars.length;   &#x2F;&#x2F; The length property returns the number of elements</span><br><span class="line">var y &#x3D; cars.sort();   &#x2F;&#x2F; The sort() method sorts arrays</span><br></pre></td></tr></table></figure>
+<h2 id="Свойство-длины"><a href="#Свойство-длины" class="headerlink" title="Свойство длины"></a>Свойство длины</h2><p><code>length</code>Свойство массива возвращает длину массива (количество элементов массива).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits.length; &#x2F;&#x2F;4</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p><em>Доступ к первому элементу массива</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">var first &#x3D; fruits[0];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; first;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p><em>Доступ к последнему элементу массива</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">var last &#x3D; fruits[fruits.length-1];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; last;  &#x2F;&#x2F;Mango</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Looping-Array-Elements-образование-петель"><a href="#Looping-Array-Elements-образование-петель" class="headerlink" title="Looping Array Elements(образование петель)"></a>Looping Array Elements(образование петель)</h2><p>Самый безопасный способ перебрать массив - использовать <code>for</code> цикл:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits, text, fLen, i;</span><br><span class="line">fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fLen &#x3D; fruits.length;</span><br><span class="line"></span><br><span class="line">text &#x3D; &quot;&lt;ul&gt;&quot;;</span><br><span class="line">for (i &#x3D; 0; i &lt; fLen; i++) &#123;</span><br><span class="line">  text +&#x3D; &quot;&lt;li&gt;&quot; + fruits[i] + &quot;&lt;&#x2F;li&gt;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">text +&#x3D; &quot;&lt;&#x2F;ul&gt;&quot;;</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; text;  </span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>вывод: (не нумерованный список)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* Banana</span><br><span class="line">* Orange</span><br><span class="line">* Apple</span><br><span class="line">* Mango</span><br></pre></td></tr></table></figure>
+<p>Вы также можете использовать Array.forEach()функцию:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits, text;</span><br><span class="line">fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line"></span><br><span class="line">text &#x3D; &quot;&lt;ul&gt;&quot;;</span><br><span class="line">fruits.forEach(myFunction);</span><br><span class="line">text +&#x3D; &quot;&lt;&#x2F;ul&gt;&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; text;</span><br><span class="line"></span><br><span class="line">function myFunction(value) &#123;</span><br><span class="line">  text +&#x3D; &quot;&lt;li&gt;&quot; + value + &quot;&lt;&#x2F;li&gt;&quot;;</span><br><span class="line">&#125; </span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* Banana</span><br><span class="line">* Orange</span><br><span class="line">* Apple</span><br><span class="line">* Mango</span><br></pre></td></tr></table></figure>
+<h2 id="Добавление-элементов-массива"><a href="#Добавление-элементов-массива" class="headerlink" title="Добавление элементов массива"></a><code>Добавление элементов массива</code></h2><p>Самый простой способ добавить новый элемент в массив - использовать <code>push()</code> метод:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits;</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  fruits.push(&quot;Lemon&quot;);</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits; &#x2F;&#x2F;Banana,Orange,Apple,Mango,Lemon</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><em>Новый элемент также можно добавить в массив, используя <code>lengthсвойство</code>:</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits;</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  fruits[fruits.length] &#x3D; &quot;Lemon&quot;;</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits;  &#x2F;&#x2F;Banana,Orange,Apple,Mango,Lemon</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><h2 id="Ассоциативные-массивы"><a href="#Ассоциативные-массивы" class="headerlink" title="Ассоциативные массивы"></a><code>Ассоциативные массивы</code></h2><p>Массивы с <strong>именованными</strong> индексами называются <code>ассоциативными</code> массивами <strong>(или хэшами)</strong>. JavaScript не поддерживает массивы с именованными индексами.</p>
+<p><strong>В JavaScript массивы всегда используют пронумерованные индексы</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var person &#x3D; [];</span><br><span class="line">person[0] &#x3D; &quot;John&quot;;</span><br><span class="line">person[1] &#x3D; &quot;Doe&quot;;</span><br><span class="line">person[2] &#x3D; 46; </span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">person[0] + &quot; &quot; + person.length;              &#x2F;&#x2F;John 3</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>// person.length will return 3<br>// person[0] will return “John”</p>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><hr>
+<h2 id="Разница-между-массивами-и-объектами"><a href="#Разница-между-массивами-и-объектами" class="headerlink" title="Разница между массивами и объектами"></a><strong>Разница между массивами и объектами</strong></h2><p>В JavaScript <code>массивы</code> используют <em><code>пронумерованные индексы</code></em> .  </p>
+<p>В JavaScript <code>объекты</code> используют <em><code>именованные индексы</code></em> .</p>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Массивы - это особый вид объектов с пронумерованными индексами.</span><br></pre></td></tr></table></figure>
+<h2 id="Когда-использовать-массивы-Когда-использовать-объекты"><a href="#Когда-использовать-массивы-Когда-использовать-объекты" class="headerlink" title="Когда использовать массивы. Когда использовать объекты."></a><strong><code>Когда использовать массивы. Когда использовать объекты.</code></strong></h2><ul>
+<li>JavaScript не поддерживает ассоциативные массивы.</li>
+<li>Вы должны использовать <code>объекты</code>, когда вы хотите, чтобы имена элементов были <code>строками</code> (текст) .</li>
+<li>Вы должны использовать <code>массивы</code>, когда хотите, чтобы имена элементов были <code>числами</code> .<br>Избегайте нового массива ()</li>
+</ul>
+<hr>
+<p>Нет необходимости использовать встроенный в JavaScript конструктор newмассива Array ().</p>
+<h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><p><strong>Используйте [ ] вместо этого.</strong></p>
+<h1 id="-6"><a href="#-6" class="headerlink" title=""></a></h1><p>Эти два разных оператора создают новый пустой массив с именем points:</p>
+<p><strong>var points = new Array( );        // Bad</strong><br><strong>var points = [ ];                  // Good</strong> </p>
+<p> Эти два разных оператора создают новый массив, содержащий 6 чисел:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">&#x2F;&#x2F;var points &#x3D; new Array(40, 100, 1, 5, 25, 10);  &#x2F;&#x2F;bad</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];             &#x2F;&#x2F;good</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points[0];  &#x2F;&#x2F;40</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Как-распознать-массив"><a href="#Как-распознать-массив" class="headerlink" title="Как распознать массив"></a><strong><code>Как распознать массив</code></strong></h2><p>Проблема в том, что оператор JavaScript <code>typeof</code>возвращает “ <em>object”</em>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; typeof fruits;  &#x2F;&#x2F;object</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-7"><a href="#-7" class="headerlink" title=""></a></h1><h1 id="-8"><a href="#-8" class="headerlink" title=""></a></h1><ul>
+<li>потому что <em>массив</em> JavaScript является <em>объектом</em>.<ul>
+<li><strong>Для решения этой проблемы ECMAScript 5 определяет новый метод Array.isArray():</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; Array.isArray(fruits);  &#x2F;&#x2F;true</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-9"><a href="#-9" class="headerlink" title=""></a></h1><h1 id="-10"><a href="#-10" class="headerlink" title=""></a></h1></li>
+</ul>
+</li>
+<li><strong>Для решения этой проблемы вы можете создать свою собственную isArray()функцию:</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; isArray(fruits);</span><br><span class="line"></span><br><span class="line">function isArray(myArray) &#123;</span><br><span class="line">  return myArray.constructor.toString().indexOf(&quot;Array&quot;) &gt; -1; &#x2F;&#x2F;true</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>Вышеприведенная функция всегда возвращает true, если аргумент является массивом.</p>
+<h1 id="-11"><a href="#-11" class="headerlink" title=""></a></h1><h1 id="-12"><a href="#-12" class="headerlink" title=""></a></h1><ul>
+<li><strong><code>instanceof</code>Оператор возвращает истину , если объект создается с помощью данного конструктора:</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits instanceof Array;                                               &#x2F;&#x2F; true</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-01</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>

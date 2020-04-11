@@ -11,7 +11,7 @@
 
     <title>
         
-          functions - BLOG LEARNING PROGRAMMING
+          FUNCTIONS JAVA SCRIPT - BLOG LEARNING PROGRAMMING
         
     </title>
 
@@ -69,9 +69,23 @@ document.addEventListener('DOMContentLoaded', function () {
 </li>
 <li><p><a href="/mysite/keywords/">JS Keywords</a></p>
 </li>
-<li><p><a href="/mysite/values">JS Values</a></p>
+<li><p><a href="/mysite/values/">JS Values</a></p>
 </li>
-<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
 <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
 <li><p><a href="/mysite/deploy.git">diploy.git</a></p>
 </li>
@@ -105,21 +119,42 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="book-content">
           
 <article id="page">
-  <h1>functions</h1>
-  <p> <strong>function</strong> - это блок кода Java Script  который может выполниться при вызове .  Вызывается <strong>function</strong> при нажатии кнопки.</p>
-<p> Размещается <strong>function</strong> между откпывающимся и закрывающимся элементоми. Так же, во внешних файлах:  book-menu.js</p>
-<pre><code>&lt;head&gt;  
+  <h1>FUNCTIONS JAVA SCRIPT</h1>
+  <p>  <strong>function</strong> - это блок кода, предназначенный для выролнения  конкретной задачи.<br>  <em>Выполняется</em> <strong>function</strong> когда что-то ее вызывает. </p>
+<p>  Ключевое слово <strong>function</strong> может <em>использоваться для определения функции внутри выражения.</em><br>  Можно  <em>определять <strong>функции</strong> используя конструктор</em> <strong>Functiоn</strong> и <em>объявление функции</em>.<strong>(function declaration)</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction(p1, p2) &#123;</span><br><span class="line">  return p1 * p2;</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; myFunction(4, 3);</span><br><span class="line">&lt;&#x2F;script&gt;                                                      &#x2F;&#x2F; 12</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; В этом примере вызывается функция, которая выполняет вычисление </span><br><span class="line">   и    возвращает результат:</span><br></pre></td></tr></table></figure>
 
-&lt;script src=&quot;book-menu.js&gt;
+<h1 id="Синтаксис-функции-JavaScript"><a href="#Синтаксис-функции-JavaScript" class="headerlink" title="Синтаксис функции JavaScript"></a>Синтаксис функции JavaScript</h1><p><strong>function</strong> ключевое слово, потом следует <strong>имя</strong> , потом следуют <strong>скобки ()</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function name(parameter1, parameter2, parameter3) &#123;</span><br><span class="line">  &#x2F;&#x2F; код для выполнения</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-&lt;/script&gt;
-&lt;/head&gt;</code></pre><p>   или внешней ссылкой с указанием папка в котором находится файл </p>
-<pre><code>&lt;body&gt;    
+<p> <em>Параметры функции</em>  указаны в скобках () в определении функции.</p>
+<p><em>Аргументы функции</em> - это значения, полученные функцией при ее вызове.</p>
+<h1 id="Вызов-функции"><a href="#Вызов-функции" class="headerlink" title="Вызов функции"></a>Вызов функции</h1><p><em>Код внутри функции</em> будет <strong>выполняться</strong> , когда «что-то» <em>вызывает (calls) функцию:</em>  <strong>(invokes calls)</strong></p>
+<ul>
+<li>Когда происходит <strong>событие</strong> (когда пользователь <em>нажимает кнопку</em>)</li>
+<li>Когда он <strong>вызывается (calls)</strong> <em>из кода JavaScript</em></li>
+<li><strong>Автоматически</strong> (самостоятельно вызывается)</li>
+</ul>
+<h1 id="Возврат-функции"><a href="#Возврат-функции" class="headerlink" title="Возврат функции"></a>Возврат функции</h1><p><strong>RETURN <em>оператора</em></strong><br>Когда JavaScript <em>достигает return оператора, функция</em><strong><em>прекращает выполнение.</em></strong></p>
+<p>Если функция была вызвана из оператора, JavaScript «вернется» для выполнения кода после вызова оператора.</p>
+<p>Функции часто вычисляют <strong>возвращаемое значение</strong> . Возвращаемое значение «возвращается» обратно «вызывающему»:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; myFunction(4, 3);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; x;</span><br><span class="line"></span><br><span class="line">function myFunction(a, b) &#123;</span><br><span class="line">  return a * b;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;        &#x2F;&#x2F;12</span><br></pre></td></tr></table></figure>
+<p>можно <code>повторно использовать код</code>: определите код один раз и используйте его много раз, <code>с разными аргументами</code>, чтобы получить разные результаты.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">function toCelsius(f) &#123;</span><br><span class="line">  return (5&#x2F;9) * (f-32);</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; toCelsius(77);</span><br><span class="line">&lt;&#x2F;script&gt;                                                 &#x2F;&#x2F;25</span><br></pre></td></tr></table></figure>
 
-&lt;script src=&quot;url/book-menu.js&quot;&gt;
+<p><strong>Оператор () вызывает функцию</strong><br>toCelsiusссылается на объект функции и toCelsius()ссылается на результат функции.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">function toCelsius(f) &#123;</span><br><span class="line">  return (5&#x2F;9) * (f-32);</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; toCelsius;</span><br><span class="line">&lt;&#x2F;script&gt;                                      &#x2F;&#x2F;function toCelsius(f) &#123; return (5&#x2F;9) * (f-32); &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Функции, используемые в качестве переменных</strong><br>Функции можно использовать так же, как вы используете переменные, во всех типах формул, назначений и вычислений.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Вместо использования переменной для хранения возвращаемого значения функции:</span><br><span class="line"></span><br><span class="line">var x &#x3D; toCelsius(77);</span><br><span class="line">var text &#x3D; &quot;The temperature is &quot; + x + &quot; Celsius&quot;;</span><br><span class="line">Вы можете использовать функцию напрямую, как значение переменной:</span><br><span class="line"></span><br><span class="line">var text &#x3D; &quot;The temperature is &quot; + toCelsius(77) + &quot; Celsius&quot;;</span><br></pre></td></tr></table></figure>
 
-&lt;/script&gt;
-&lt;/body&gt;</code></pre>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">&quot;The temperature is &quot; + toCelsius(77) + &quot; Celsius&quot;;</span><br><span class="line"></span><br><span class="line">function toCelsius(fahrenheit) &#123;</span><br><span class="line">  return (5&#x2F;9) * (fahrenheit-32);</span><br><span class="line">&#125; </span><br><span class="line">&lt;&#x2F;script&gt;                    &#x2F;&#x2F;The temperature is 25 Celsius</span><br></pre></td></tr></table></figure>
+
+<h1 id="Локальные-переменные"><a href="#Локальные-переменные" class="headerlink" title="Локальные переменные"></a><code>Локальные переменные</code></h1><p>Переменные, объявленные в функции JavaScript, становятся <strong>ЛОКАЛЬНЫМИ</strong> для этой функции.<br>Доступ к локальным переменным возможен только из функции.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; code here can NOT use carName</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  var carName &#x3D; &quot;Volvo&quot;;</span><br><span class="line">  &#x2F;&#x2F; code here CAN use carName</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; code here can NOT use carName</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">myFunction();</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  var carName &#x3D; &quot;Volvo&quot;;</span><br><span class="line">  document.getElementById(&quot;demo1&quot;).innerHTML &#x3D;</span><br><span class="line">  typeof carName + &quot; &quot; + carName;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo2&quot;).innerHTML &#x3D;</span><br><span class="line">typeof carName;                                    &#x2F;&#x2F;string Volvo</span><br><span class="line"></span><br><span class="line">                                                      &#x2F;&#x2F;undefined</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>Локальные переменные создаются при запуске функции и удаляются при ее завершении.</p>
+
 </article>
 
 <div id="paginator">

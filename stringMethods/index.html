@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          STRING METHODS - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about/">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions/">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display/">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements/">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords/">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values/">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>STRING METHODS</h1>
+  <h1 id="Строковые-методы-JavaScript"><a href="#Строковые-методы-JavaScript" class="headerlink" title="Строковые методы JavaScript"></a>Строковые методы JavaScript</h1><hr>
+<p><strong>Строковые методы помогают вам работать со строками</strong></p>
+<hr>
+<h1 id="Поиск-строки-в-строке"><a href="#Поиск-строки-в-строке" class="headerlink" title="Поиск строки в строке"></a>Поиск строки в строке</h1><p>Два метода,<br><code>indexOf()</code> и<br> <code>search()</code>, равны?</p>
+<ul>
+<li>Они принимают одинаковые аргументы (параметры) и возвращают одно и то же значение?</li>
+</ul>
+<p>Два метода НЕ равны. Это различия:</p>
+<ul>
+<li>search()Метод не может принимать второй аргумент позиции начала.</li>
+</ul>
+<hr>
+<ul>
+<li>indexOf()Метод не может принимать мощные значения поиска (регулярные выражения).</li>
+</ul>
+<hr>
+<h1 id="Извлечение-string-частей"><a href="#Извлечение-string-частей" class="headerlink" title="Извлечение string частей"></a>Извлечение string частей</h1><p>3 метода для извлечения части строки:</p>
+<ul>
+<li><code>slice(start, end)</code></li>
+<li><code>substring(start, end)</code></li>
+<li><code>substr(start, length)</code></li>
+</ul>
+<hr>
+<h1 id="The-slice-Method"><a href="#The-slice-Method" class="headerlink" title="The slice() Method"></a>The slice() Method</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var str &#x3D; &quot;Apple, Banana, Kiwi&quot;;</span><br><span class="line">var res &#x3D; str.slice(7,13);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; res;  &#x2F;&#x2F;Banana</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>slice() извлекает часть строки и возвращает извлеченную часть в новой строке.</p>
+<p>Метод принимает 2 параметра: начальную позицию и конечную позицию (конечная позиция не включена).</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Помните: JavaScript считает позиции с нуля. Первая позиция 0.</span><br></pre></td></tr></table></figure>
+<hr>
+<p>Если вы опустите второй параметр, метод будет вырезать остальную часть строки:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var str &#x3D; &quot;Apple, Banana, Kiwi&quot;;</span><br><span class="line">var res &#x3D; str.slice(7);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; res; &#x2F;&#x2F;Banana, Kiwi</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>считая с конца:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var str &#x3D; &quot;Apple, Banana, Kiwi&quot;;</span><br><span class="line">var res &#x3D; str.slice(-12) </span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; res;  &#x2F;&#x2F;&#x2F;&#x2F;Banana, Kiwi</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Метод-подстроки"><a href="#Метод-подстроки" class="headerlink" title="Метод подстроки ()"></a>Метод подстроки ()</h2><p><code>substring()</code> похоже на <code>slice()</code>.</p>
+<p>Разница в том, что <code>substring()</code> нельзя принимать отрицательные показатели.</p>
+<hr>
+<h2 id="Метод-substr"><a href="#Метод-substr" class="headerlink" title="Метод substr ()"></a>Метод <code>substr ()</code></h2><p><code>substr()</code> похоже на <code>slice().</code><br>Разница в том, что второй параметр указывает <strong>длину</strong> извлеченной части.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var str &#x3D; &quot;Apple, Banana, Kiwi&quot;;</span><br><span class="line">var res &#x3D; str.substr(7,6);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; res; &#x2F;&#x2F;Banana</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>Метод substr () извлекает часть строки и возвращает извлеченные части в новой строке.</p>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p>Если вы пропустите второй параметр, substr()будет вырезана остальная часть строки.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var str &#x3D; &quot;Apple, Banana, Kiwi&quot;;</span><br><span class="line">var res &#x3D; str.substr(7);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; res;  &#x2F;&#x2F;Banana,Kiwi</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><p>Если первый параметр отрицателен, позиция отсчитывается от конца строки.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var str &#x3D; &quot;Apple, Banana, Kiwi&quot;;</span><br><span class="line">var res &#x3D; str.substr(-4);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; res;  &#x2F;&#x2F;Kiwi</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Замена-содержимого-строки"><a href="#Замена-содержимого-строки" class="headerlink" title="Замена содержимого строки"></a>Замена содержимого строки</h1><p><code>replace()</code> Метод заменяет указанное значение с другим значением в строке</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h2&gt;JavaScript String Methods&lt;/h2&gt;
+&lt;p&gt;Replace &quot;Microsoft&quot; with &quot;W3Schools&quot; in the paragraph below:&lt;/p&gt;
+&lt;button onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;
+&lt;p id=&quot;demo&quot;&gt;Please visit Microsoft!&lt;/p&gt;
+&lt;script&gt;
+function myFunction() {
+  var str = document.getElementById(&quot;demo&quot;).innerHTML; 
+  var txt = str.replace(&quot;Microsoft&quot;,&quot;W3Schools&quot;);
+  document.getElementById(&quot;demo&quot;).innerHTML = txt;
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;                </code></pre><p>По умолчанию <code>replace()</code> метод заменяет <strong>только первое</strong> совпадение.</p>
+<h1 id="Метод-concat"><a href="#Метод-concat" class="headerlink" title="Метод concat ()"></a>Метод concat ()</h1><p><code>concat()</code> объединяет две или более строки:</p>
+<script>
+var text1 = "Hello";
+var text2 = "World!";
+var text3 = text1.concat(" ",text2);
+document.getElementById("demo").innerHTML = text3;  //Hello World!
+</script>
+
+<p><code>concat()</code> Метод может быть использован вместо оператора плюс. Эти две строки делают то же самое:</p>
+<p>var text = “Hello” + “ “ + “World!”;<br>var text = “Hello”.concat(“ “, “World!”);</p>
+<hr>
+<h1 id="String-trim"><a href="#String-trim" class="headerlink" title="String.trim ()"></a>String.trim ()</h1><p><code>trim()</code> метод удаляет пробельные символы с обеих сторон строки:</p>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><h2 id="Извлечение-строковых-символов"><a href="#Извлечение-строковых-символов" class="headerlink" title="Извлечение строковых символов"></a>Извлечение строковых символов</h2><ul>
+<li><code>charAt(position)</code></li>
+<li><code>charCodeAt(position)</code></li>
+<li><code>Property access [ ]</code></li>
+</ul>
+<hr>
+<h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><h1 id="-6"><a href="#-6" class="headerlink" title=""></a></h1><h2 id="Метод-charAt"><a href="#Метод-charAt" class="headerlink" title="Метод charAt ()"></a>Метод charAt ()</h2><p><code>charAt()</code> Метод возвращает символ по указанному индексу (позиции) в строке:</p>
+<pre><code>&lt;script&gt;
+var str = &quot;HELLO WORLD&quot;;
+document.getElementById(&quot;demo&quot;).innerHTML = str.charAt(0); //return H;
+&lt;/script&gt;</code></pre><hr>
+<h2 id="Преобразование-строки-в-массив"><a href="#Преобразование-строки-в-массив" class="headerlink" title="Преобразование строки в массив"></a><code>Преобразование строки в массив</code></h2><p><code>split()</code> метода  может  преобразовать строку в массив</p>
+<pre><code> &lt;button onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;
+
+ &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+  function myFunction() {
+  var str = &quot;a,b,c,d,e,f&quot;;
+  var arr = str.split(&quot;,&quot;);
+  document.getElementById(&quot;demo&quot;).innerHTML = arr[0];       //a
+}
+&lt;/script&gt;</code></pre>
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-08</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>

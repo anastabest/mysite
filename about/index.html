@@ -69,9 +69,23 @@ document.addEventListener('DOMContentLoaded', function () {
 </li>
 <li><p><a href="/mysite/keywords/">JS Keywords</a></p>
 </li>
-<li><p><a href="/mysite/values">JS Values</a></p>
+<li><p><a href="/mysite/values/">JS Values</a></p>
 </li>
-<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
 <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
 <li><p><a href="/mysite/deploy.git">diploy.git</a></p>
 </li>
@@ -106,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
           
 <article id="page">
   <h1>метод  getElementById().</h1>
-  <h2 id="Метод-JavaScript-HTML-является-getElementById"><a href="#Метод-JavaScript-HTML-является-getElementById" class="headerlink" title="Метод JavaScript HTML является getElementById()."></a>Метод JavaScript HTML является getElementById().</h2><ul>
+  <h1 id="Java-Script-Скриптовый-язык"><a href="#Java-Script-Скриптовый-язык" class="headerlink" title="Java Script ## Скриптовый язык"></a><em>Java Script</em> ## Скриптовый язык</h1><p>Скриптова мова (англ. scripting language) — мова програмування, розроблена для запису «сценаріїв», послідовностей операцій, які користувач може виконувати на комп’ютері.</p>
+<p>Динамі́чна мо́ва!<br>Динамі́чна мо́ва дозволяє визначати типи даних і здійснювати синтаксичний аналіз і компіляцію «на льоту», безпосередньо на етапі виконання.</p>
+<h2 id="Метод-JavaScript-HTML-является-getElementById"><a href="#Метод-JavaScript-HTML-является-getElementById" class="headerlink" title="Метод JavaScript HTML является getElementById()."></a>Метод JavaScript HTML является getElementById().</h2><ul>
 <li><p>Метод используется для «поиска» HTML-элемента (с id = «demo») и изменения элемента content ( innerHTML) на «Hello JavaScript»</p>
 <h2 id="пример"><a href="#пример" class="headerlink" title="пример"></a>пример</h2><pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript can change HTML content.&lt;/p&gt;
 
@@ -115,6 +131,24 @@ document.addEventListener('DOMContentLoaded', function () {
 <ul>
 <li>при нажатии кнопки меняется текст;</li>
 </ul>
+<p><strong>Атрибуты</strong></p>
+<ul>
+<li>Все элементы HTML могут иметь <strong>атрибуты</strong></li>
+<li><strong>Атрибуты</strong> предоставляют <em>дополнительную информацию об элементе</em></li>
+<li><strong>Атрибуты</strong> всегда <em>указываются</em> в начальном теге</li>
+<li><strong>Атрибуты</strong> обычно входят в <em>пары имя / значение,</em> такие как: <strong>name = “value”</strong></li>
+</ul>
+<p><strong>Атрибут</strong> <code>href</code>   <code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;</code><br><strong>Атрибут</strong> <code>src</code>    <code>&lt;img src=&quot;img_girl.jpg&quot;&gt;</code><br><strong>Атрибут</strong> <code>width</code> и <code>height</code>  <code>&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</code><br><strong>Атрибут</strong> <code>alt</code>   <code>&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a jacket&quot;&gt;</code><br><strong>Атрибут</strong> <code>style</code>  <code>&lt;p style=&quot;color:red&quot;&gt;This is a red paragraph.&lt;/p&gt;</code><br> <code>style</code>  Атрибут используется для указания стиля элемента, как цвет, шрифт, размер и т.д<br><strong>Атрибут заголовка</strong> <code>title</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p title&#x3D;&quot;I&#39;m a tooltip&quot;&gt;</span><br><span class="line">Mouse over this paragraph, to display the title attribute as a tooltip.</span><br><span class="line">&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>Атрибут</strong> <code>lang</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en-US&quot;&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Вложенные элементы HTML</strong><br>Элементы HTML могут быть вложенными (элементы могут содержать элементы).</p>
+<p>Все документы HTML состоят из вложенных элементов HTML.</p>
+<p>Этот пример содержит четыре элемента HTML:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;My First Heading&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;p&gt;My first paragraph.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
 <h1 id="JavaScript-может-изменять-значения-атрибутов-HTML"><a href="#JavaScript-может-изменять-значения-атрибутов-HTML" class="headerlink" title="JavaScript может изменять значения атрибутов HTML"></a>JavaScript может изменять значения атрибутов HTML</h1><pre><code>&lt;button onclick=&quot;document.getElementById(&apos;myImage&apos;).src=&apos;pic_bulbon.gif&apos;&quot;&gt;Turn on the light&lt;/button&gt;
 
 &lt;img id=&quot;myImage&quot; src=&quot;pic_bulboff.gif&quot; style=&quot;width:100px&quot;&gt;

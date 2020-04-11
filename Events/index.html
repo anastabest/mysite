@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          EVENTS - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about/">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions/">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display/">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements/">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords/">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values/">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>EVENTS</h1>
+  <h1 id="События-JavaScript"><a href="#События-JavaScript" class="headerlink" title="События JavaScript"></a>События JavaScript</h1><hr>
+<p> Когда JavaScript используется на страницах HTML, JavaScript может <code>«реагировать»</code> на эти события.</p>
+<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><h1 id="HTML-события"><a href="#HTML-события" class="headerlink" title="HTML события"></a>HTML события</h1><p>HTML-событие может быть тем, что делает браузер, или тем, что делает пользователь.<br><em>Несколько примеров событий HTML:</em></p>
+<ul>
+<li>HTML-страница закончила загрузку</li>
+<li>Поле ввода HTML было изменено</li>
+<li>Была нажата кнопка HTML<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1>В приведенном выше примере код JavaScript изменяет содержимое элемента с помощью id = “demo”.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;document.getElementById(&#39;demo&#39;).innerHTML&#x3D;Date()&quot;&gt;The time is?&lt;&#x2F;button&gt;</span><br></pre></td></tr></table></figure>
+В следующем примере код изменяет содержимое своего собственного элемента (используя this.innerHTML):<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;this.innerHTML&#x3D;Date()&quot;&gt;The time is?&lt;&#x2F;button&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="Чаще-встречаются-атрибуты-событий-вызывающие-функции"><a href="#Чаще-встречаются-атрибуты-событий-вызывающие-функции" class="headerlink" title="Чаще встречаются атрибуты событий, вызывающие функции:"></a><strong><code>Чаще встречаются атрибуты событий, вызывающие функции:</code></strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;displayDate()&quot;&gt;The time is?&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function displayDate() &#123;</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; Date();</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;         &#x2F;&#x2F;Wed Apr 08 2020 14:48:30 GMT+0300 (за східноєвропейським літнім часом)</span><br></pre></td></tr></table></figure>
+<h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><h1 id="-6"><a href="#-6" class="headerlink" title=""></a></h1><h2 id="Common-HTML-Events-Общие-события-HTML"><a href="#Common-HTML-Events-Общие-события-HTML" class="headerlink" title="Common HTML Events / Общие события HTML"></a>Common HTML Events / Общие события HTML</h2><p><strong>Events</strong></p>
+<p><code>&lt;onchange&gt;</code>         по изменению… HTML-элемент был изменен<br><code>&lt;onclick&gt;</code>          по щелчку…    Пользователь щелкает элемент HTML<br><code>&lt;onmouseover&gt;</code>      при наведении курсора на…  Пользователь наводит указатель мыши на элемент HTML<br><code>&lt;onmouseout&gt;</code>     Пользователь наводит указатель мыши на элемент HTML<br><code>&lt;onKeyDown&gt;</code>      Пользователь наводит указатель мыши на элемент HTML<br><code>&lt;onload&gt;</code>         в процессе    Браузер завершил загрузку страницы</p>
+<h1 id="-7"><a href="#-7" class="headerlink" title=""></a></h1><h1 id="-8"><a href="#-8" class="headerlink" title=""></a></h1><p><strong>Что может сделать JavaScript?</strong><br>Обработчики событий могут использоваться для обработки и проверки пользовательского ввода, действий пользователя и действий браузера:</p>
+<ul>
+<li>Что нужно делать каждый раз, когда загружается страница</li>
+<li>Что нужно сделать, когда страница закрыта</li>
+<li>Действие, которое должно быть выполнено, когда пользователь нажимает кнопку</li>
+<li>Контент, который должен быть проверен, когда пользователь вводит данные</li>
+<li>И более …</li>
+</ul>
+<hr>
+<p>Можно использовать много разных методов, чтобы JavaScript мог работать с событиями:</p>
+<ul>
+<li>Атрибуты событий HTML могут выполнять код JavaScript напрямую</li>
+<li>Атрибуты событий HTML могут вызывать функции JavaScript</li>
+<li>Вы можете назначить свои собственные функции обработчика событий элементам HTML</li>
+<li>Вы можете предотвратить отправку или обработку событий</li>
+<li>И более …</li>
+</ul>
+
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-08</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>

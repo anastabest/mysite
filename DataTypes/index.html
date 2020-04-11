@@ -11,7 +11,7 @@
 
     <title>
         
-          Data Types - BLOG LEARNING PROGRAMMING
+          Data Types   Типы Данных - BLOG LEARNING PROGRAMMING
         
     </title>
 
@@ -69,9 +69,23 @@ document.addEventListener('DOMContentLoaded', function () {
 </li>
 <li><p><a href="/mysite/keywords/">JS Keywords</a></p>
 </li>
-<li><p><a href="/mysite/values">JS Values</a></p>
+<li><p><a href="/mysite/values/">JS Values</a></p>
 </li>
-<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
 <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
 <li><p><a href="/mysite/deploy.git">diploy.git</a></p>
 </li>
@@ -105,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="book-content">
           
 <article id="page">
-  <h1>Data Types</h1>
+  <h1>Data Types   Типы Данных</h1>
   <h2 id="Переменные-JavaScript-числа-строки-объекты-и-многое-другое"><a href="#Переменные-JavaScript-числа-строки-объекты-и-многое-другое" class="headerlink" title="Переменные JavaScript : числа, строки, объекты и многое другое:"></a>Переменные JavaScript : числа, строки, объекты и многое другое:</h2><pre><code>var length = 16;                               // Number
 var lastName = &quot;Johnson&quot;;                      // String
 var x = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;};    // Object</code></pre><h2 id="Объекты-могут-быть-очищены-путем-установки-значения-в-NULL"><a href="#Объекты-могут-быть-очищены-путем-установки-значения-в-NULL" class="headerlink" title="Объекты могут быть очищены путем установки значения в NULL."></a>Объекты могут быть очищены путем установки значения в NULL.</h2><pre><code>&lt;script&gt;
@@ -154,6 +168,92 @@ carName2;
 </ul>
 <h1 id="JavaScript-Booleans"><a href="#JavaScript-Booleans" class="headerlink" title="JavaScript Booleans"></a>JavaScript Booleans</h1><p>Логические значения могут иметь только два значения:<br>true или false.                                              </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; 5; </span><br><span class="line">var y &#x3D; 5;                                      &#x2F;&#x2F; Returns true                                           </span><br><span class="line">var z &#x3D; 6;                                       &#x2F;&#x2F; Returns false</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">(x &#x3D;&#x3D; y) + &quot;&lt;br&gt;&quot; + (x &#x3D;&#x3D; z);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Массивы-JavaScript"><a href="#Массивы-JavaScript" class="headerlink" title="Массивы JavaScript"></a>Массивы JavaScript</h1><p>Массивы JavaScript написаны в квадратных скобках.<br>Элементы массива разделяются запятыми.</p>
+<pre><code>&lt;script&gt;
+var cars = [&quot;Saab&quot;,&quot;Volvo&quot;,&quot;BMW&quot;];
+
+document.getElementById(&quot;demo&quot;).innerHTML = cars[0];
+&lt;/script&gt;                                             // Saab</code></pre><p><em><strong>Индексы массива начинаются с нуля, что означает, что первым элементом является [0].</strong></em></p>
+<h1 id="JavaScript-объекты"><a href="#JavaScript-объекты" class="headerlink" title="JavaScript объекты"></a>JavaScript объекты</h1><p>Объекты JavaScript пишутся с помощью фигурных скобок {}.</p>
+<p>Свойства объекта записываются в виде пар имя: значение, разделенных запятыми.</p>
+<pre><code>&lt;script&gt;
+var person = {
+firstName : &quot;John&quot;,
+lastName  : &quot;Doe&quot;,
+age     : 50,
+eyeColor  : &quot;blue&quot;
+};
+document.getElementById(&quot;demo&quot;).innerHTML =
+person.firstName + &quot; is &quot; + person.age + &quot; years old.&quot;;    // John is 50 years old.
+&lt;/script&gt;</code></pre><h1 id="Тип-оператора"><a href="#Тип-оператора" class="headerlink" title="Тип оператора"></a>Тип оператора</h1><p><strong>typeof Оператор</strong></p>
+<h3 id="возвращает-тип-переменной-или-выражением"><a href="#возвращает-тип-переменной-или-выражением" class="headerlink" title="возвращает тип переменной или выражением:"></a>возвращает тип переменной или выражением:</h3><pre><code>&lt;script&gt;s
+document.getElementById(&quot;demo&quot;).innerHTML = 
+typeof &quot;&quot; + &quot;&lt;br&gt;&quot; +                             
+typeof &quot;John&quot; + &quot;&lt;br&gt;&quot; +                string                                          
+typeof &quot;John Doe&quot;;                               //Returnsstring   
+&lt;/script&gt;                                        //Returns string
+                                                 //Returns string</code></pre><h1 id=""><a href="#" class="headerlink" title=""></a></h1><pre><code>&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML =       
+typeof 0 + &quot;&lt;br&gt;&quot; +                               //number 
+typeof 314 + &quot;&lt;br&gt;&quot; +                             //number
+typeof 3.14 + &quot;&lt;br&gt;&quot; +                            //number
+typeof (3) + &quot;&lt;br&gt;&quot; +                             //number
+typeof (3 + 4);                                   //number
+&lt;/script&gt;</code></pre><h1 id="Значение-UNDEFINED-typeof-undefined"><a href="#Значение-UNDEFINED-typeof-undefined" class="headerlink" title="Значение UNDEFINED  typeof undefined"></a>Значение <strong>UNDEFINED</strong>  typeof <strong>undefined</strong></h1><p>В JavaScript переменная без значения имеет:</p>
+<ul>
+<li><em>значение</em> <strong>undefined</strong>. Тип тоже undefined.<pre><code>&lt;script&gt;
+ var car;
+ document.getElementById(&quot;demo&quot;).innerHTML =
+ car + &quot;&lt;br&gt;&quot; + typeof car;                     // undefined
+ &lt;/script&gt;                                      // undefined</code></pre></li>
+<li>Любую переменную можно очистить, установив значение в <strong>undefined</strong>. Тип тоже будет undefined.</li>
+</ul>
+<h1 id="Значение-NULL-typeof-object"><a href="#Значение-NULL-typeof-object" class="headerlink" title="Значение NULL   typeof object"></a>Значение <strong>NULL</strong>   typeof <strong>object</strong></h1><p>В JavaScript <em>null это «ничего»</em>. Что-то, чего не существует.<br>typeof <strong>null</strong> является <strong>объектом</strong></p>
+<h3 id="очистить-объект-установив-его-в-null"><a href="#очистить-объект-установив-его-в-null" class="headerlink" title="очистить объект,  установив его в null"></a><strong>очистить <em>объект</em>,</strong>  установив его в <strong>null</strong></h3><pre><code>&lt;script&gt;
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
+person = null;                                       
+document.getElementById(&quot;demo&quot;).innerHTML = typeof person;
+&lt;/script&gt;                                               // object</code></pre><p><strong>undefined</strong> и <strong>null</strong> <em>равны</em> по значению, но <em>различаются</em> по типу</p>
+<h3 id="очистить-объект-установив-его-в-undefined"><a href="#очистить-объект-установив-его-в-undefined" class="headerlink" title="очистить объект, установив его в undefined"></a><strong>очистить <em>объект</em></strong>, установив его в <strong>undefined</strong></h3><pre><code>&lt;script&gt;
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
+person = undefined;
+document.getElementById(&quot;demo&quot;).innerHTML = person;
+&lt;/script&gt;                                          // undefined</code></pre><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><pre><code>typeof undefined           // undefined
+typeof null                // object
+
+null === undefined         // false
+null == undefined          // true</code></pre><h2 id="Примитивное-значение-данных"><a href="#Примитивное-значение-данных" class="headerlink" title="Примитивное значение данных"></a><strong>Примитивное <em>значение данных</em></strong></h2><ul>
+<li>это одно простое значение данных <em>без дополнительных свойств и методов.</em></li>
+</ul>
+<p><strong>typeof</strong> <em>oператор возвращает  один из этих примитивных типов:</em></p>
+<ul>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>undefined<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><pre><code>&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML = 
+typeof &quot;john&quot; + &quot;&lt;br&gt;&quot; +                     // string
+typeof 3.14 + &quot;&lt;br&gt;&quot; +                       // number   
+typeof true + &quot;&lt;br&gt;&quot; +                       // boolean 
+typeof false + &quot;&lt;br&gt;&quot; +                      // boolean
+typeof x;                                    // undefined 
+&lt;/script&gt;</code></pre><h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1></li>
+</ul>
+<h1 id="Комплексные-данные-Complex-Data-returns"><a href="#Комплексные-данные-Complex-Data-returns" class="headerlink" title="Комплексные данные Complex Data (returns)"></a>Комплексные данные <strong>Complex Data</strong> (returns)</h1><p><strong>typeof</strong> <em>oператор</em> может <em>возвращать</em> одно из двух сложных типов:</p>
+<ul>
+<li>function</li>
+<li>object<h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1></li>
+</ul>
+<p><strong>typeof</strong> <em>возвращает</em> оператор «объект» для <em>объектов, массивов, и нуля.</em></p>
+<p><strong>typeof</strong> оператор <em>не возвращает</em> «объект» <em>для функций.</em></p>
+<pre><code>&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML = 
+typeof {name:&apos;john&apos;, age:34} + &quot;&lt;br&gt;&quot; +       // object
+typeof [1,2,3,4] + &quot;&lt;br&gt;&quot; +                   // object
+typeof null + &quot;&lt;br&gt;&quot; +                        // object
+typeof function myFunc(){};                   // function 
+&lt;/script&gt;</code></pre>
 </article>
 
 <div id="paginator">

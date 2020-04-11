@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          STRINGS - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about/">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions/">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display/">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements/">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords/">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values/">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes/">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays/">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects/">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events/">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings/">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods/">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods/">JS Number Methods</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>STRINGS</h1>
+  <h1 id="Строки-JavaScript"><a href="#Строки-JavaScript" class="headerlink" title="Строки JavaScript"></a>Строки JavaScript</h1><hr>
+<ul>
+<li>Строки JavaScript используются для хранения и манипулирования текстом. </li>
+</ul>
+<hr>
+<ul>
+<li>Строка JavaScript содержит ноль или более символов, заключенных в кавычки.</li>
+</ul>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var carName1 &#x3D; &quot;Volvo XC60&quot;;  &#x2F;&#x2F; Double quotes</span><br><span class="line">var carName2 &#x3D; &#39;Volvo XC60&#39;;  &#x2F;&#x2F; Single quotes</span><br></pre></td></tr></table></figure>
+<h1 id="Длина-строки"><a href="#Длина-строки" class="headerlink" title="Длина строки"></a>Длина строки</h1><ul>
+<li><p>Чтобы найти длину строки, используйте встроенное lengthсвойство:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var txt &#x3D; &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; txt.length;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Последовательность &quot;  вставляет двойную кавычку в строку:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;                                                                &#x2F;&#x2F;Экранирующая последовательность \ &quot;вставляет двойную кавычку в строку.</span><br><span class="line">var x &#x3D; &quot;We are the so-called \&quot;Vikings\&quot; from the north.&quot;;             &#x2F;&#x2F;Мы так называемые &quot;викинги&quot; с севера.</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; x; </span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>Последовательность &#39;  вставляет одиночную кавычку в строку:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; &#39;It\&#39;s alright.&#39;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; x;    &#x2F;&#x2F;It&#39;s alright.</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>Последовательность \  вставляет в строку обратную косую черту:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; &quot;The character \\ is called backslash.&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; x;  &#x2F;&#x2F;The character \ is called backslash.</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li>Шесть других escape-последовательностей допустимы в JavaScript</li>
+</ul>
+<hr>
+<p>\b       Backspace<br>возврат на одну позицию</p>
+<hr>
+<p>\f        Form Feed<br>Подача формы</p>
+<hr>
+<p>\n        New Line<br>Новая линия</p>
+<hr>
+<p>\r    Carriage Return<br>Возврат каретки</p>
+<hr>
+<p>\t    Horizontal Tabulator<br>Горизонтальный табулятор</p>
+<hr>
+<p>\v    Vertical Tabulator<br>Вертикальный табулятор</p>
+<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><h1 id="Прерывание-длинных-строк-кода"><a href="#Прерывание-длинных-строк-кода" class="headerlink" title="Прерывание длинных строк кода"></a>Прерывание длинных строк кода</h1><ul>
+<li>Если оператор JavaScript не помещается в одну строку, лучше всего его разбить после оператора:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">&quot;Hello Dolly!&quot;;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
+<li>Вы также можете разбить строку кода внутри текстовой строки с помощью одной обратной косой черты:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;Hello \</span><br><span class="line">Dolly!&quot;;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><h1 id="Строки-могут-быть-объектами"><a href="#Строки-могут-быть-объектами" class="headerlink" title="Строки могут быть объектами"></a>Строки могут быть объектами</h1><hr>
+<ul>
+<li>Обычно строки JavaScript являются примитивными значениями, созданными из литералов:</li>
+</ul>
+<h2 id="var-firstName-“John”"><a href="#var-firstName-“John”" class="headerlink" title="var firstName = “John”;"></a>var firstName = “John”;</h2><ul>
+<li>Но строки также могут быть определены как объекты с ключевым словом new:</li>
+</ul>
+<h2 id="var-firstName-new-String-“John”"><a href="#var-firstName-new-String-“John”" class="headerlink" title="var firstName = new String(“John”);"></a>var firstName = new String(“John”);</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; &quot;John&quot;;        &#x2F;&#x2F; x is a string</span><br><span class="line">var y &#x3D; new String(&quot;John&quot;);  &#x2F;&#x2F; y is an object</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">typeof x + &quot;&lt;br&gt;&quot; + typeof y;              </span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li><p>При использовании ==оператора равные строки равны:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; &quot;John&quot;;        &#x2F;&#x2F; x is a string</span><br><span class="line">var y &#x3D; new String(&quot;John&quot;);  &#x2F;&#x2F; y is an object</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; (x&#x3D;&#x3D;y);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>При использовании ===оператора одинаковые строки не равны, поскольку ===оператор ожидает равенства как по типу, так и по значению.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; &quot;John&quot;;        &#x2F;&#x2F; x is a string</span><br><span class="line">var y &#x3D; new String(&quot;John&quot;);  &#x2F;&#x2F; y is an object</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; (x&#x3D;&#x3D;&#x3D;y);  &#x2F;&#x2F;false</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><code>Обратите внимание на разницу между (x==y)и (x===y).</code><br><code>Сравнение двух объектов JavaScript всегда вернет false</code></p>
+
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-08</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>
