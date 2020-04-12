@@ -1,5 +1,5 @@
 ---
-title: STRINGS
+title: Strings
 date: 2020-04-08 15:47:33
 ---
 # Строки JavaScript
