@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          Сортировка Массивов - /JavaScript Sorting Arrays/ - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods">JS Number Methods</a></p>
+</li>
+<li><p><a href="/mysite/arrayMethods">JS Array Methods</a></p>
+</li>
+<li><p><a href="/mysite/сортировкаМассивов">JS Сортировка Массивов</a></p>
+</li>
+<li><p><a href="/mysite/итерацияМассива">JS Итерация Массива</a></p>
+</li>
+<li><p><a href="/mysite/даты">JS Даты</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>Сортировка Массивов - /JavaScript Sorting Arrays/</h1>
+  <p><code>sort()</code> Метод сортирует массив по алфавиту</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The sort() method sorts an array alphabetically.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits;</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  fruits.sort();</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p><code>reverse()</code> Метод изменяет элементы в массиве.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">&#x2F;&#x2F; Create and display an array:</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits;</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  &#x2F;&#x2F; First sort the array</span><br><span class="line">  fruits.sort();</span><br><span class="line">  &#x2F;&#x2F; Then reverse it:</span><br><span class="line">  fruits.reverse();</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; fruits;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Числовая-сортировка"><a href="#Числовая-сортировка" class="headerlink" title="Числовая сортировка"></a>Числовая сортировка</h2><p>По умолчанию <code>sort()</code> функция сортирует значения в виде строк .<br>Однако, если числа отсортированы как строки, «25» больше, чем «100», потому что «2» больше, чем «1».</p>
+<p>Из-за этого <code>sort()</code> метод будет давать неверный результат при сортировке чисел.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Click the button to sort the array in ascending order.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;  </span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  points.sort(function(a, b)&#123;return a - b&#125;);</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Функция-сравнения"><a href="#Функция-сравнения" class="headerlink" title="Функция сравнения"></a>Функция сравнения</h2><p>Цель функции сравнения - определить альтернативный порядок сортировки.</p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Функция сравнения должна возвращать отрицательное, нулевое или положительное значение в зависимости от аргументов:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function(a, b)&#123;return a - b&#125;</span><br></pre></td></tr></table></figure>
+<p>Когда <code>sort()</code> функция сравнивает два значения, она отправляет значения в функцию сравнения и сортирует значения в соответствии с возвращенным (отрицательным, нулевым, положительным) значением.</p>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p><strong>Пример:</strong></p>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><p>Функция сравнения сравнивает все значения в массиве по два значения за раз (a, b).</p>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><p>При сравнении 40 и 100 sort()метод вызывает функцию сравнения (40, 100).</p>
+<h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><p>Функция вычисляет 40 - 100 (a - b), и поскольку результат отрицательный (-60), функция сортировки будет сортировать 40 как значение ниже 100.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;myFunction1()&quot;&gt;Sort Alphabetically&lt;&#x2F;button&gt;</span><br><span class="line">&lt;button onclick&#x3D;&quot;myFunction2()&quot;&gt;Sort Numerically&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;  </span><br><span class="line"></span><br><span class="line">function myFunction1() &#123;</span><br><span class="line">  points.sort();</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;</span><br><span class="line">&#125;</span><br><span class="line">function myFunction2() &#123;</span><br><span class="line">  points.sort(function(a, b)&#123;return a - b&#125;);</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Сортировка-массива-в-случайном-порядке"><a href="#Сортировка-массива-в-случайном-порядке" class="headerlink" title="Сортировка массива в случайном порядке"></a>Сортировка массива в случайном порядке</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Click the button (again and again) to sort the array in random order.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;  </span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  points.sort(function(a, b)&#123;return 0.5 - Math.random()&#125;);</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="The-Fisher-Yates-Method"><a href="#The-Fisher-Yates-Method" class="headerlink" title="The Fisher Yates Method"></a>The Fisher Yates Method</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Click the button (again and again) to sort the array in random order.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;  </span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">var i, j, k;</span><br><span class="line">  for (i &#x3D; points.length -1; i &gt; 0; i--) &#123;</span><br><span class="line">    j &#x3D; Math.floor(Math.random() * i)</span><br><span class="line">    k &#x3D; points[i]</span><br><span class="line">    points[i] &#x3D; points[j]</span><br><span class="line">    points[j] &#x3D; k</span><br><span class="line">  &#125;</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Найти-самое-высокое-или-самое-низкое-значение-массива"><a href="#Найти-самое-высокое-или-самое-низкое-значение-массива" class="headerlink" title="Найти самое высокое (или самое низкое) значение массива"></a>Найти самое высокое (или самое низкое) значение массива</h2><p>после сортировки массива вы можете использовать индекс для получения самых высоких и самых низких значений.</p>
+<p>Сортировка по возрастанию:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The lowest number is &lt;span id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;span&gt;.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">points.sort(function(a, b)&#123;return a-b&#125;);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points[0];   &#x2F;&#x2F;The lowest number is 1. </span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><p><strong>//теперь points [0] содержит самое низкое значение</strong><br><strong>// и points [points.length-1] содержит наибольшее значение</strong></p>
+<h1 id="-6"><a href="#-6" class="headerlink" title=""></a></h1><h1 id="-7"><a href="#-7" class="headerlink" title=""></a></h1><p>Сортировка по убыванию:</p>
+<h1 id="-8"><a href="#-8" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The highest number is &lt;span id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;span&gt;.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">points.sort(function(a, b)&#123;return b-a&#125;);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; points[0];</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-9"><a href="#-9" class="headerlink" title=""></a></h1><p><strong>// теперь points [0] содержит наибольшее значение</strong><br><strong>// и points [points.length-1] содержит самое низкое значение</strong></p>
+<h1 id="-10"><a href="#-10" class="headerlink" title=""></a></h1><h1 id="-11"><a href="#-11" class="headerlink" title=""></a></h1><p>Использование <code>Math.max ()</code>для массива<br>Вы можете использовать, Math.max.applyчтобы найти наибольшее число в массиве:</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; myArrayMax(points);</span><br><span class="line"></span><br><span class="line">function myArrayMax(arr) &#123;</span><br><span class="line">  return Math.max.apply(null, arr);  &#x2F;&#x2F;The highest number is 100.</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-12"><a href="#-12" class="headerlink" title=""></a></h1><h1 id="-13"><a href="#-13" class="headerlink" title=""></a></h1><h1 id="-14"><a href="#-14" class="headerlink" title=""></a></h1><p><code>Math.max.apply(null, [1, 2, 3])</code> эквивалентно <code>Math.max(1, 2, 3).</code><br>Использование Math.min () для массива</p>
+<hr>
+<h1 id="-15"><a href="#-15" class="headerlink" title=""></a></h1><p>Вы можете использовать, Math.min.applyчтобы найти наименьшее число в массиве:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The lowest number is &lt;span id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;span&gt;.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; myArrayMin(points);</span><br><span class="line"></span><br><span class="line">function myArrayMin(arr) &#123;</span><br><span class="line">  return Math.min.apply(null, arr);  &#x2F;&#x2F;The lowest number is 1.</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p><code>Math.min.apply(null, [1, 2, 3])</code> эквивалентно <code>Math.min(1, 2, 3).</code></p>
+<h1 id="-16"><a href="#-16" class="headerlink" title=""></a></h1><hr>
+<h1 id="-17"><a href="#-17" class="headerlink" title=""></a></h1><h2 id="Мои-Мин-Макс-Методы-JavaScript-My-Min-Max-JavaScript-Methods"><a href="#Мои-Мин-Макс-Методы-JavaScript-My-Min-Max-JavaScript-Methods" class="headerlink" title="Мои Мин / Макс Методы JavaScript    //My Min / Max JavaScript Methods"></a>Мои Мин / Макс Методы JavaScript    //My Min / Max JavaScript Methods</h2><p>Самое быстрое решение - это использовать «домашний» метод.</p>
+<h1 id="-18"><a href="#-18" class="headerlink" title=""></a></h1><p>Эта функция просматривает массив, сравнивая каждое значение с наибольшим найденным значением:<br><strong>Пример (Найти Макс)</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The highest number is &lt;span id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;span&gt;.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; myArrayMax(points);</span><br><span class="line"></span><br><span class="line">function myArrayMax(arr) &#123;</span><br><span class="line">  var len &#x3D; arr.length;</span><br><span class="line">  var max &#x3D; -Infinity;</span><br><span class="line">  while (len--) &#123;</span><br><span class="line">    if (arr[len] &gt; max) &#123;</span><br><span class="line">      max &#x3D; arr[len];            &#x2F;&#x2F;The highest number is 100.</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return max;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-19"><a href="#-19" class="headerlink" title=""></a></h1><p>Эта функция просматривает массив, сравнивая каждое значение с самым низким найденным значением:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The lowest number is &lt;span id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;span&gt;.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var points &#x3D; [40, 100, 1, 5, 25, 10];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; myArrayMin(points);</span><br><span class="line"></span><br><span class="line">function myArrayMin(arr) &#123;</span><br><span class="line">  var len &#x3D; arr.length;</span><br><span class="line">  var min &#x3D; Infinity;</span><br><span class="line">  while (len--) &#123;</span><br><span class="line">    if (arr[len] &lt; min) &#123;</span><br><span class="line">      min &#x3D; arr[len];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return min;    &#x2F;&#x2F;The lowest number is 1.</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Сортировка-массивов-объектов"><a href="#Сортировка-массивов-объектов" class="headerlink" title="Сортировка массивов объектов"></a>Сортировка массивов объектов</h2><h1 id="-20"><a href="#-20" class="headerlink" title=""></a></h1><p>Массивы JavaScript часто содержат объекты:</p>
+<h1 id="-21"><a href="#-21" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var cars &#x3D; [</span><br><span class="line">  &#123;type:&quot;Volvo&quot;, year:2016&#125;,</span><br><span class="line">  &#123;type:&quot;Saab&quot;, year:2001&#125;,</span><br><span class="line">  &#123;type:&quot;BMW&quot;, year:2010&#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+<h1 id="-22"><a href="#-22" class="headerlink" title=""></a></h1><p>Даже если объекты имеют свойства разных типов данных, sort()метод можно использовать для сортировки массива.</p>
+<h1 id="-23"><a href="#-23" class="headerlink" title=""></a></h1><p>Решение состоит в том, чтобы написать функцию сравнения для сравнения значений свойств:</p>
+<h1 id="-24"><a href="#-24" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Sort&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var cars &#x3D; [</span><br><span class="line">  &#123;type:&quot;Volvo&quot;, year:2016&#125;,</span><br><span class="line">  &#123;type:&quot;Saab&quot;, year:2001&#125;,</span><br><span class="line">  &#123;type:&quot;BMW&quot;, year:2010&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">displayCars();</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  cars.sort(function(a, b)&#123;return a.year - b.year&#125;);</span><br><span class="line">  displayCars();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function displayCars() &#123;</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">  cars[0].type + &quot; &quot; + cars[0].year + &quot;&lt;br&gt;&quot; +    &#x2F;&#x2F;Saab 2001</span><br><span class="line">                                                  &#x2F;&#x2F; BMW 2010</span><br><span class="line">                                                  &#x2F;&#x2F; Volvo 2016</span><br><span class="line">  cars[1].type + &quot; &quot; + cars[1].year + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  cars[2].type + &quot; &quot; + cars[2].year;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-25"><a href="#-25" class="headerlink" title=""></a></h1><p>Сравнение свойств строки</p>
+<h1 id="-26"><a href="#-26" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Sort&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var cars &#x3D; [</span><br><span class="line">  &#123;type:&quot;Volvo&quot;, year:2016&#125;,</span><br><span class="line">  &#123;type:&quot;Saab&quot;, year:2001&#125;,</span><br><span class="line">  &#123;type:&quot;BMW&quot;, year:2010&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">displayCars();</span><br><span class="line"></span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  cars.sort(function(a, b)&#123;</span><br><span class="line">    var x &#x3D; a.type.toLowerCase();</span><br><span class="line">    var y &#x3D; b.type.toLowerCase();</span><br><span class="line">    if (x &lt; y) &#123;return -1;&#125;</span><br><span class="line">    if (x &gt; y) &#123;return 1;&#125;</span><br><span class="line">    return 0;</span><br><span class="line">  &#125;);</span><br><span class="line">  displayCars();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function displayCars() &#123;</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">  cars[0].type + &quot; &quot; + cars[0].year + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  cars[1].type + &quot; &quot; + cars[1].year + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  cars[2].type + &quot; &quot; + cars[2].year;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;       &#x2F;&#x2F;BMW 2010</span><br><span class="line">                &#x2F;&#x2F;Saab 2001</span><br><span class="line">                &#x2F;&#x2F;Volvo 2016</span><br></pre></td></tr></table></figure>
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-13</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>

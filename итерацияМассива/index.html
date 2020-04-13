@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          Итерация Массива   / Array Iteration - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods">JS Number Methods</a></p>
+</li>
+<li><p><a href="/mysite/arrayMethods">JS Array Methods</a></p>
+</li>
+<li><p><a href="/mysite/сортировкаМассивов">JS Сортировка Массивов</a></p>
+</li>
+<li><p><a href="/mysite/итерацияМассива">JS Итерация Массива</a></p>
+</li>
+<li><p><a href="/mysite/даты">JS Даты</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>Итерация Массива   / Array Iteration</h1>
+  <h2 id="Методы-итерации-JavaScript"><a href="#Методы-итерации-JavaScript" class="headerlink" title="Методы итерации JavaScript"></a>Методы итерации JavaScript</h2><hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Методы итерации массива работают с каждым элементом массива.</p>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><hr>
+<p><code>forEach()</code> Метод вызывает функцию <em>(функцию обратного вызова)</em> один раз для каждого элемента массива.</p>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Calls a function once for each array element.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var txt &#x3D; &quot;&quot;;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">numbers.forEach(myFunction);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; txt;</span><br><span class="line"></span><br><span class="line">function myFunction(value, index, array) &#123;</span><br><span class="line">  txt &#x3D; txt + value + &quot;&lt;br&gt;&quot;; </span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&#x2F;&#x2F; 45</span><br><span class="line">&#x2F;&#x2F; 4</span><br><span class="line">&#x2F;&#x2F; 9</span><br><span class="line">&#x2F;&#x2F; 16</span><br><span class="line">&#x2F;&#x2F; 25</span><br></pre></td></tr></table></figure>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><p>Обратите внимание, что функция принимает 3 аргумента:</p>
+<h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><ul>
+<li>Стоимость товара</li>
+<li>Предметный указатель</li>
+<li>Сам массив<h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1>Пример можно переписать так:<h1 id="-6"><a href="#-6" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Calls a function once for each array element.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var txt &#x3D; &quot;&quot;;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">numbers.forEach(myFunction);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; txt;</span><br><span class="line"></span><br><span class="line">function myFunction(value) &#123;</span><br><span class="line">  txt &#x3D; txt + value + &quot;&lt;br&gt;&quot;; </span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&#x2F;&#x2F; 45</span><br><span class="line">&#x2F;&#x2F; 4</span><br><span class="line">&#x2F;&#x2F; 9</span><br><span class="line">&#x2F;&#x2F; 16</span><br><span class="line">&#x2F;&#x2F; 25</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h1 id="-7"><a href="#-7" class="headerlink" title=""></a></h1><h2 id="Array-map"><a href="#Array-map" class="headerlink" title="Array.map ()"></a>Array.map ()</h2><p><code>map()</code> Метод создает новый массив, выполняя функцию для каждого элемента массива.</p>
+<h1 id="-8"><a href="#-8" class="headerlink" title=""></a></h1><p><code>map()</code> Метод не выполняет функцию для элементов массива без значений.</p>
+<h1 id="-9"><a href="#-9" class="headerlink" title=""></a></h1><p><code>map()</code> Метод не изменяет исходный массив.</p>
+<h1 id="-10"><a href="#-10" class="headerlink" title=""></a></h1><p>Этот пример умножает каждое значение массива на 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Creates a new array by performing a function on each array element.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers1 &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var numbers2 &#x3D; numbers1.map(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; numbers2;</span><br><span class="line"></span><br><span class="line">function myFunction(value, index, array) &#123;</span><br><span class="line">  return value * 2;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;   &#x2F;&#x2F;90,8,18,32,50</span><br></pre></td></tr></table></figure>
+<h1 id="-11"><a href="#-11" class="headerlink" title=""></a></h1><p>функция принимает 3 аргумента:</p>
+<h1 id="-12"><a href="#-12" class="headerlink" title=""></a></h1><ul>
+<li>Стоимость товара</li>
+<li>Предметный указатель</li>
+<li>Сам массив<h1 id="-13"><a href="#-13" class="headerlink" title=""></a></h1>Когда функция обратного вызова использует только параметр value, параметры index и array могут быть опущены:<h1 id="-14"><a href="#-14" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Creates a new array by performing a function on each array element.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers1 &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var numbers2 &#x3D; numbers1.map(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; numbers2;</span><br><span class="line"></span><br><span class="line">function myFunction(value) &#123;</span><br><span class="line">  return value * 2;</span><br><span class="line">&#125; </span><br><span class="line">&lt;&#x2F;script&gt;     &#x2F;&#x2F;90,8,18,32,50</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h1 id="-15"><a href="#-15" class="headerlink" title=""></a></h1><h2 id="Array-filter"><a href="#Array-filter" class="headerlink" title="Array.filter ()"></a>Array.filter ()</h2><p><code>filter()</code> Метод создает новый массив с элементами массива, проходит тест.</p>
+<p>В этом примере создается новый массив из элементов со значением больше 18:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Creates a new array with all array elements that passes a test.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var over18 &#x3D; numbers.filter(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; over18;</span><br><span class="line"></span><br><span class="line">function myFunction(value, index, array) &#123;</span><br><span class="line">  return value &gt; 18;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;   &#x2F;&#x2F;45,25</span><br></pre></td></tr></table></figure>
+<h1 id="-16"><a href="#-16" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Creates a new array with all array elements that passes a test.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var over18 &#x3D; numbers.filter(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; over18;</span><br><span class="line"></span><br><span class="line">function myFunction(value) &#123;</span><br><span class="line">  return value &gt; 18;         &#x2F;&#x2F;45,25</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="Array-reduce"><a href="#Array-reduce" class="headerlink" title="Array.reduce ()"></a>Array.reduce ()</h1><p><code>reduce()</code> Метод запускает функцию для каждого элемента массива , чтобы произвести (уменьшить его до) одно значение.</p>
+<p><code>reduce()</code> Метод работает слева направо в массиве. Смотрите также <code>reduceRight().</code></p>
+<h1 id="-17"><a href="#-17" class="headerlink" title=""></a></h1><p><strong><code>reduce()</code>Метод не уменьшает исходный массив.</strong></p>
+<h1 id="-18"><a href="#-18" class="headerlink" title=""></a></h1><p>Этот пример находит сумму всех чисел в массиве:</p>
+<h1 id="-19"><a href="#-19" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This example finds the sum of all numbers in an array:&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var sum &#x3D; numbers.reduce(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;The sum is &quot; + sum;</span><br><span class="line"></span><br><span class="line">function myFunction(total, value, index, array) &#123;</span><br><span class="line">  return total + value;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;                                 &#x2F;&#x2F;The sum is 99</span><br></pre></td></tr></table></figure>
+<h1 id="-20"><a href="#-20" class="headerlink" title=""></a></h1><p>функция принимает 4 аргумента</p>
+<h1 id="-21"><a href="#-21" class="headerlink" title=""></a></h1><ul>
+<li>Итого (начальное значение / ранее возвращенное значение)</li>
+<li>Стоимость товара</li>
+<li>Предметный указатель</li>
+<li>Сам массив<h1 id="-22"><a href="#-22" class="headerlink" title=""></a></h1>В приведенном выше примере не используются параметры индекса и массива.<h1 id="-23"><a href="#-23" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This example finds the sum of all numbers in an array:&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var sum &#x3D; numbers.reduce(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;The sum is &quot; + sum;</span><br><span class="line"></span><br><span class="line">function myFunction(total, value) &#123;</span><br><span class="line">  return total + value;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-24"><a href="#-24" class="headerlink" title=""></a></h1><code>reduce()</code>Метод может принимать начальное значение:<h1 id="-25"><a href="#-25" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This example finds the sum of all numbers in an array:&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var sum &#x3D; numbers.reduce(myFunction, 100);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;The sum is &quot; + sum;</span><br><span class="line"></span><br><span class="line">function myFunction(total, value) &#123;</span><br><span class="line">  return total + value;                   &#x2F;&#x2F;The sum is 199</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h1 id="-26"><a href="#-26" class="headerlink" title=""></a></h1><h2 id="Array-reduceRight"><a href="#Array-reduceRight" class="headerlink" title="Array.reduceRight ()"></a>Array.reduceRight ()</h2><h1 id="-27"><a href="#-27" class="headerlink" title=""></a></h1><p><code>reduceRight()</code> Метод запускает функцию для каждого элемента массива , чтобы произвести (уменьшить его до) одно значение.</p>
+<h1 id="-28"><a href="#-28" class="headerlink" title=""></a></h1><p>В <code>reduceRight()</code> работах от справа налево в массиве. Смотрите также <code>reduce().</code></p>
+<h1 id="-29"><a href="#-29" class="headerlink" title=""></a></h1><p><code>reduceRight()</code> Метод не уменьшает исходный массив.</p>
+<h1 id="-30"><a href="#-30" class="headerlink" title=""></a></h1><p>пример находит сумму всех чисел в массиве:</p>
+<h1 id="-31"><a href="#-31" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This example finds the sum of all numbers in an array:&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var sum &#x3D; numbers.reduceRight(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;The sum is &quot; + sum;</span><br><span class="line"></span><br><span class="line">function myFunction(total, value, index, array) &#123;</span><br><span class="line">  return total + value;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;           &#x2F;&#x2F;The sum is 99</span><br></pre></td></tr></table></figure>
+<h1 id="-32"><a href="#-32" class="headerlink" title=""></a></h1><p> функция принимает 4 аргумента:</p>
+<p>Итого (начальное значение / ранее возвращенное значение)</p>
+<h1 id="-33"><a href="#-33" class="headerlink" title=""></a></h1><ul>
+<li>Стоимость товара</li>
+<li>Предметный указатель</li>
+<li>Сам массив<h1 id="-34"><a href="#-34" class="headerlink" title=""></a></h1><h1 id="-35"><a href="#-35" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This example finds the sum of all numbers in an array:&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var sum &#x3D; numbers.reduceRight(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;The sum is &quot; + sum;</span><br><span class="line"></span><br><span class="line">function myFunction(total, value) &#123;</span><br><span class="line">  return total + value;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;       &#x2F;&#x2F;The sum is 99</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h2 id="Array-every"><a href="#Array-every" class="headerlink" title="Array.every ()"></a>Array.every ()</h2><p><code>every()</code> Проверка метода , если все значения массива пройти тест.</p>
+<h1 id="-36"><a href="#-36" class="headerlink" title=""></a></h1><p>В этом примере проверьте, все ли значения массива больше 18:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The every() method checks if all array values pass a test.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var allOver18 &#x3D; numbers.every(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;All over 18 is &quot; + allOver18;</span><br><span class="line"></span><br><span class="line">function myFunction(value, index, array) &#123;</span><br><span class="line">  return value &gt; 18;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;   &#x2F;&#x2F;All over 18 is false</span><br></pre></td></tr></table></figure>
+<h1 id="-37"><a href="#-37" class="headerlink" title=""></a></h1><h1 id="-38"><a href="#-38" class="headerlink" title=""></a></h1><h2 id="Array-some"><a href="#Array-some" class="headerlink" title="Array.some ()"></a>Array.some ()</h2><p><code>some()</code>Проверка метода , если некоторые значения массива пройти тест.</p>
+<p> пример проверки, если некоторые значения массива больше 18:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;The some() method checks if some array values pass a test.&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [45, 4, 9, 16, 25];</span><br><span class="line">var someOver18 &#x3D; numbers.some(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;Some over 18 is &quot; + someOver18;</span><br><span class="line"></span><br><span class="line">function myFunction(value, index, array) &#123;</span><br><span class="line">  return value &gt; 18;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;      &#x2F;&#x2F;Some over 18 is true</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="-39"><a href="#-39" class="headerlink" title=""></a></h1><h1 id="-40"><a href="#-40" class="headerlink" title=""></a></h1><h2 id="Array-indexOf"><a href="#Array-indexOf" class="headerlink" title="Array.indexOf ()"></a>Array.indexOf ()</h2><p><code>indexOf()</code>Метод ищет массив для значения элемента и возвращает его позицию.<br><em>Поиск в массиве для элемента «Apple»:</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">var a &#x3D; fruits.indexOf(&quot;Apple&quot;);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;Apple is found in position &quot; + a;</span><br><span class="line">&lt;&#x2F;script&gt;           &#x2F;&#x2F;Apple is found in position 0</span><br><span class="line"></span><br><span class="line">&lt;p&gt;The indexOf() does not work in Internet Explorer 8 and earlier versions.&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+<p><strong><code>Синтаксис</code></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array.indexOf(item, start)</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="-41"><a href="#-41" class="headerlink" title=""></a></h1><p><em>item</em><br>пункт      Обязательный. Элемент для поиска.</p>
+<hr>
+<p>start<br>начать      Необязательными. С чего начать поиск. Отрицательные  значения начнутся с заданной позиции, начиная с конца, и начнут поиск до конца.</p>
+<h1 id="-42"><a href="#-42" class="headerlink" title=""></a></h1><p><code>Array.indexOf()</code> возвращает -1, если элемент не найден.</p>
+<h1 id="-43"><a href="#-43" class="headerlink" title=""></a></h1><p>Если элемент присутствует более одного раза, он возвращает позицию первого вхождения.</p>
+<hr>
+<h2 id="Array-lastIndexOf"><a href="#Array-lastIndexOf" class="headerlink" title="Array.lastIndexOf ()"></a>Array.lastIndexOf ()</h2><p><code>Array.lastIndexOf()</code> такой же, как <code>Array.indexOf(),</code> но возвращает позицию последнего вхождения указанного элемента.</p>
+<h1 id="-44"><a href="#-44" class="headerlink" title=""></a></h1><p>Поиск в массиве для элемента «Apple»:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">var a &#x3D; fruits.lastIndexOf(&quot;Apple&quot;);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;Apple is found in position &quot; + (a + 1);      &#x2F;&#x2F;Apple is found in position 3</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="-45"><a href="#-45" class="headerlink" title=""></a></h1><h2 id="Array-find"><a href="#Array-find" class="headerlink" title="Array.find ()"></a>Array.find ()</h2><p><code>find()</code> Метод возвращает значение первого элемента массива , который проходит тестовую функцию.</p>
+<h1 id="-46"><a href="#-46" class="headerlink" title=""></a></h1><p> пример находит (возвращает значение) первый элемент, который больше 18:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [4, 9, 16, 25, 29];</span><br><span class="line">var first &#x3D; numbers.find(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;First number over 18 is &quot; + first;</span><br><span class="line"></span><br><span class="line">function myFunction(value, index, array) &#123;</span><br><span class="line">  return value &gt; 18;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;       &#x2F;&#x2F;First number over 18 is 25</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Array-findIndex"><a href="#Array-findIndex" class="headerlink" title="Array.findIndex ()"></a>Array.findIndex ()</h2><p><code>findIndex()</code> Метод возвращает индекс первого элемента массива , который проходит тестовую функцию.</p>
+<h1 id="-47"><a href="#-47" class="headerlink" title=""></a></h1><p>Этот пример находит индекс первого элемента, который больше 18:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var numbers &#x3D; [4, 9, 16, 25, 29];</span><br><span class="line">var first &#x3D; numbers.findIndex(myFunction);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; &quot;First number over 18 has index &quot; + first;</span><br><span class="line"></span><br><span class="line">function myFunction(value, index, array) &#123;</span><br><span class="line">  return value &gt; 18;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;    &#x2F;&#x2F;First number over 18 has index 3</span><br></pre></td></tr></table></figure>
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-13</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>
