@@ -14,3 +14,4 @@ document.getElementById("demo").innerHTML = fruits.toString();  //Banana,Orange,
 </script>
 ```
 
+

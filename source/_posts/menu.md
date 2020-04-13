@@ -6,36 +6,38 @@ tags:
 
 
 # JAVA SCRIPT
-- [JS About](/mysite/about/)
+- [JS About](/mysite/about)
 
-- [JS Functions](/mysite/functions/)
+- [JS Functions](/mysite/functions)
 
-- [JS Display](/mysite/display/)
+- [JS Display](/mysite/display)
 
-- [JS Statements](/mysite/statements/)
+- [JS Statements](/mysite/statements)
 
-- [JS Keywords](/mysite/keywords/)
+- [JS Keywords](/mysite/keywords)
 
-- [JS Values](/mysite/values/)
+- [JS Values](/mysite/values)
 
-- [JS Data Types](/mysite/DataTypes/)
+- [JS Data Types](/mysite/DataTypes)
 
-- [JS Arrays](/mysite/arrays/)
+- [JS Arrays](/mysite/arrays)
 
-- [JS Objects](/mysite/objects/)
+- [JS Objects](/mysite/objects)
 
-- [JS Events](/mysite/Events/)
+- [JS Events](/mysite/Events)
 
-- [JS Strings](/mysite/Strings/)
+- [JS Strings](/mysite/Strings)
 
-- [JS String Methods](/mysite/stringMethods/)
+- [JS String Methods](/mysite/stringMethods)
 
 - [JS Numbers](/mysite/Numbers)
 
-- [JS Number Methods](/mysite/numberMethods/)
+- [JS Number Methods](/mysite/numberMethods)
 
-- [JS Array Methods](/mysite/arrayMethods/)
-
+- [JS Array Methods](/mysite/arrayMethods)
+- [JS Сортировка Массивов](/mysite/сортировкаМассивов)
+- [JS Итерация Массива](/mysite/итерацияМассива)
+- [JS Даты](/mysite/даты)
 # HEXO
 - [diploy.git](/mysite/deploy.git)
 
