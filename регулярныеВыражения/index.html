@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          Регулярные Выражения - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods">JS Number Methods</a></p>
+</li>
+<li><p><a href="/mysite/arrayMethods">JS Array Methods</a></p>
+</li>
+<li><p><a href="/mysite/сортировкаМассивов">JS Сортировка Массивов</a></p>
+</li>
+<li><p><a href="/mysite/итерацияМассива">JS Итерация Массива</a></p>
+</li>
+<li><p><a href="/mysite/даты">JS Даты</a></p>
+</li>
+<li><p><a href="/mysite/форматДаты">JS Формат Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыПолученияДаты">JS Методы Получения Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыУстановкиДаты">JS Методы Установки Даты</a></p>
+</li>
+<li><p><a href="/mysite/математическийОбъект">JS Математический Объект</a></p>
+</li>
+<li><p><a href="/mysite/случайный">JS Случайный</a></p>
+</li>
+<li><p><a href="/mysite/булевые">JS Булевые</a></p>
+</li>
+<li><p><a href="/mysite/сравнения">JS Сравнения</a></p>
+</li>
+<li><p><a href="/mysite/условия">JS Условия</a></p>
+</li>
+<li><p><a href="/mysite/switchПереключатель">JS Switch Переключатель</a></p>
+</li>
+<li><p><a href="/mysite/breakContinue">JS Break Continue</a></p>
+</li>
+<li><p><a href="/mysite/typeConversionПреобразование">JS Type Conversion Преобразование</a></p>
+</li>
+<li><p><a href="/mysite/bitwise">JS Bitwise</a></p>
+</li>
+<li><p><a href="/mysite/регулярныеВыражения">JS Регулярные Выражения</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>Регулярные Выражения</h1>
+  <h2 id="Регулярные-выражения-JavaScript"><a href="#Регулярные-выражения-JavaScript" class="headerlink" title="Регулярные выражения JavaScript"></a>Регулярные выражения JavaScript</h2><hr>
+<p>Регулярное выражение - это последовательность символов, образующая шаблон поиска.</p>
+<p>Шаблон поиска можно использовать для операций поиска текста и замены текста.</p>
+<hr>
+<h2 id="Что-такое-регулярное-выражение"><a href="#Что-такое-регулярное-выражение" class="headerlink" title="Что такое регулярное выражение?"></a>Что такое регулярное выражение?</h2><p>Регулярное выражение - это последовательность символов, образующая шаблон поиска .</p>
+<p>Когда вы ищете данные в тексте, вы можете использовать этот шаблон поиска для описания того, что вы ищете.</p>
+<p>Регулярное выражение может быть одним символом или более сложным шаблоном.</p>
+<p>Регулярные выражения могут использоваться для выполнения всех типов операций текстового поиска и замены текста .</p>
+<h2 id="Синтаксис"><a href="#Синтаксис" class="headerlink" title="Синтаксис"></a>Синтаксис</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;pattern&#x2F;modifiers;</span><br></pre></td></tr></table></figure>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>ПРИМЕР:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var patt &#x3D; &#x2F;w3schools&#x2F;i;</span><br></pre></td></tr></table></figure>
+<p><em>Пример объяснил</em></p>
+<p><strong>/ w3schools / i</strong>   - это регулярное выражение.</p>
+<p><strong>w3schools</strong>  - это шаблон (для поиска).</p>
+<p><strong>i</strong>  является модификатором (модифицирует поиск, чтобы быть нечувствительным к регистру).</p>
+<hr>
+<h2 id="Использование-строковых-методов"><a href="#Использование-строковых-методов" class="headerlink" title="Использование строковых методов"></a>Использование строковых методов</h2><p>В JavaScript регулярные выражения часто используются с двумя <strong>строковыми методами :</strong> <code>search()и replace().</code></p>
+<p><code>search()</code> Метод использует выражение для поиска соответствия, и возвращает позицию матча.</p>
+<p><code>replace()</code> Метод возвращает модифицированную строку , в которой заменяется шаблон.</p>
+<hr>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><h2 id="Использование-поиска-по-search-со-строкой-Using-String-search-With-a-String"><a href="#Использование-поиска-по-search-со-строкой-Using-String-search-With-a-String" class="headerlink" title="Использование поиска по search () со строкой /Using String search() With a String"></a>Использование поиска по <code>search ()</code> со строкой /Using String search() With a String</h2><p>В <code>search()</code> методе ищет строку для указанного значения и возвращает позицию матча:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var str &#x3D; &quot;Visit W3Schools!&quot;; </span><br><span class="line">var n &#x3D; str.search(&quot;W3Schools&quot;);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; n;  &#x2F;&#x2F; 6</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Использование-поиска-search-с-регулярным-выражением-Using-String-search-With-a-Regular-Expression"><a href="#Использование-поиска-search-с-регулярным-выражением-Using-String-search-With-a-Regular-Expression" class="headerlink" title="Использование поиска search () с регулярным выражением   /Using String search() With a Regular Expression"></a>Использование поиска <code>search ()</code> с регулярным выражением   /Using String search() With a Regular Expression</h2><p>спользуйте регулярное выражение, чтобы выполнить поиск “w3schools” без учета регистра в строке:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var str &#x3D; &quot;Visit W3Schools&quot;;</span><br><span class="line">var n &#x3D; str.search(&#x2F;w3schools&#x2F;i);   &#x2F;&#x2F; 6</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<h2 id="Использование-String-replace-Строкой"><a href="#Использование-String-replace-Строкой" class="headerlink" title="Использование String replace () Строкой"></a>Использование String <code>replace ()</code> Строкой</h2><p><code>replace()</code>Метод заменяет указанное значение с другим значением в строке:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  var str &#x3D; document.getElementById(&quot;demo&quot;).innerHTML; </span><br><span class="line">  var txt &#x3D; str.replace(&quot;Microsoft&quot;,&quot;W3Schools&quot;);</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; txt;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>результат:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Replace &quot;Microsoft&quot; with &quot;W3Schools&quot; in the paragraph below:</span><br><span class="line"></span><br><span class="line">Try it</span><br><span class="line">Please visit W3Schools!</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Используйте-String-replace-с-регулярным-выражением"><a href="#Используйте-String-replace-с-регулярным-выражением" class="headerlink" title="Используйте String replace () с регулярным выражением"></a>Используйте String <code>replace ()</code> с регулярным выражением</h2><p>Используйте регулярное выражение без учета регистра, чтобы заменить Microsoft на W3Schools в строке:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;Please visit Microsoft and Microsoft!&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  var str &#x3D; document.getElementById(&quot;demo&quot;).innerHTML; </span><br><span class="line">  var txt &#x3D; str.replace(&#x2F;microsoft&#x2F;i,&quot;W3Schools&quot;);</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; txt;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>//(<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_regexp_string_replace" target="_blank" rel="noopener">https://www.w3schools.com/js/tryit.asp?filename=tryjs_regexp_string_replace</a>)</p>
+<hr>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Аргументы регулярного выражения (вместо строковых аргументов) могут быть использованы в методах выше.</span><br><span class="line"></span><br><span class="line">Регулярные выражения могут сделать ваш поиск намного более мощным (например, без учета регистра).</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Модификаторы-регулярных-выражений"><a href="#Модификаторы-регулярных-выражений" class="headerlink" title="Модификаторы регулярных выражений"></a>Модификаторы регулярных выражений</h2><p><strong>Модификаторы</strong> можно использовать для выполнения глобальных поисков без учета регистра:</p>
+<p><strong>i</strong>    Выполнить сопоставление без учета регистра  (Perform case-insensitive matching)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  var str &#x3D; &quot;Visit W3Schools&quot;;</span><br><span class="line">  var patt1 &#x3D; &#x2F;w3schools&#x2F;i;</span><br><span class="line">  var result &#x3D; str.match(patt1); </span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; result;      &#x2F;&#x2F; W3Schools</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>g</strong>     Выполнить глобальное совпадение (найти все совпадения, а не останавливаться после первого совпадения)<br>         (Perform a global match (find all matches rather than stopping after the first match) )</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick&#x3D;&quot;myFunction()&quot;&gt;Try it&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  var str &#x3D; &quot;Is this all there is?&quot;;</span><br><span class="line">  var patt1 &#x3D; &#x2F;is&#x2F;g;</span><br><span class="line">  var result &#x3D; str.match(patt1);</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; result;  &#x2F;&#x2F; is,is</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&#96;&#96;&#96;         </span><br><span class="line">**m**	Выполнить многострочное сопоставление  (Perform multiline matching)</span><br></pre></td></tr></table></figure>
+<p><button onclick="myFunction()">Try it</button></p>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "\nIs th\nis it?";
+  var patt1 = /^is/m;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;   // is
+}
+</script>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">Шаблоны регулярных выражений</span><br><span class="line">---</span><br><span class="line">_Скобки_ используются для поиска диапазона символов:</span><br><span class="line">[abc]	  Найдите любой символ в скобках (Find any of the characters between the brackets)	</span><br><span class="line">[0-9]	 Найдите любую из цифр в скобках  (Find any of the digits between the brackets)	</span><br><span class="line">(x|y)	 Найдите любую из цифр в скобках  (Find any of the alternatives separated with |)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">_Метасимволы_ - это символы с особым значением:</span><br><span class="line">---</span><br><span class="line">**\d**	найти цифру (Find a digit)	</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">**\s**	 найти пробел (Find a whitespace character)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">**\b**	 Найдите совпадение в начале слова, подобного этому: \ bWORD, или в конце слова, подобного этому: WORD \ b(Find a match at the beginning of a word like this:    \bWORD, or at the end of a word like this: WORD\b)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">**\uxxxx**  Найти символ Unicode, указанный шестнадцатеричным числом xxxx	(Find the Unicode character specified by the hexadecimal number xxxx)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">Квантификаторы определяют количества:</span><br><span class="line">---</span><br><span class="line">**n+** Соответствует любой строке, которая содержит хотя бы один n	(Matches any string that contains at least one n)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">**n***	Соответствует любой строке, которая содержит ноль или более вхождений n (Matches any string that contains zero or more occurrences of n)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">**n?**  Соответствует любой строке, которая содержит ноль или одно вхождение n	(Matches any string that contains zero or one occurrences of n)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">Использование объекта RegExp</span><br><span class="line">---</span><br><span class="line">В JavaScript объект RegExp является объектом регулярного выражения с предопределенными свойствами и методами.</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">Использование &#96;test ()&#96;</span><br><span class="line">---</span><br><span class="line">&#96; test()&#96; Способ представляет собой способ выражения RegExp.</span><br><span class="line"></span><br><span class="line">Он ищет строку для шаблона и возвращает true или false, в зависимости от результата.</span><br><span class="line"></span><br><span class="line">В следующем примере выполняется поиск строки для символа «e»:</span><br></pre></td></tr></table></figure>
+<p>Search for an "e" in the next paragraph:</p>
+
+<p id="p01">The best things in life are free!</p>
+
+<p id="demo"></p>
+
+<script>
+text = document.getElementById("p01").innerHTML; 
+document.getElementById("demo").innerHTML = /e/.test(text);  // true
+</script>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">Использование &#96;exec ()&#96;</span><br><span class="line">---</span><br><span class="line">&#96;exec()&#96; Способ представляет собой способ выражения RegExp.</span><br><span class="line"></span><br><span class="line">Он ищет строку для указанного шаблона и возвращает найденный текст как объект.</span><br><span class="line"></span><br><span class="line">Если совпадений не найдено, возвращается пустой _(нулевой)_ объект.</span><br><span class="line"></span><br><span class="line">В следующем примере выполняется поиск строки для символа «e»:</span><br></pre></td></tr></table></figure>
+<script>
+var obj = /e/.exec("The best things in life are free!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+</script>
+
+<p>// Found e in position 2 in the text: The best things in life are free!</p>
+<pre><code></code></pre>
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-30</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>

@@ -94,6 +94,32 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><p><a href="/mysite/итерацияМассива">JS Итерация Массива</a></p>
 </li>
 <li><p><a href="/mysite/даты">JS Даты</a></p>
+</li>
+<li><p><a href="/mysite/форматДаты">JS Формат Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыПолученияДаты">JS Методы Получения Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыУстановкиДаты">JS Методы Установки Даты</a></p>
+</li>
+<li><p><a href="/mysite/математическийОбъект">JS Математический Объект</a></p>
+</li>
+<li><p><a href="/mysite/случайный">JS Случайный</a></p>
+</li>
+<li><p><a href="/mysite/булевые">JS Булевые</a></p>
+</li>
+<li><p><a href="/mysite/сравнения">JS Сравнения</a></p>
+</li>
+<li><p><a href="/mysite/условия">JS Условия</a></p>
+</li>
+<li><p><a href="/mysite/switchПереключатель">JS Switch Переключатель</a></p>
+</li>
+<li><p><a href="/mysite/breakContinue">JS Break Continue</a></p>
+</li>
+<li><p><a href="/mysite/typeConversionПреобразование">JS Type Conversion Преобразование</a></p>
+</li>
+<li><p><a href="/mysite/bitwise">JS Bitwise</a></p>
+</li>
+<li><p><a href="/mysite/регулярныеВыражения">JS Регулярные Выражения</a></p>
 <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
 <li><p><a href="/mysite/deploy.git">diploy.git</a></p>
 </li>
@@ -128,7 +154,42 @@ document.addEventListener('DOMContentLoaded', function () {
           
 <article id="page">
   <h1>Даты  /  JavaScript Date Objects</h1>
-  
+  <p>JavaScript <strong>Date Object</strong> позволяет нам работать с датами:</p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><strong>JavaScript <code>new Date()</code></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var d &#x3D; new Date();</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; d;</span><br><span class="line">&lt;&#x2F;script&gt;      &#x2F;&#x2F;Tue Apr 14 2020 12:51:57 GMT+0300 (за східноєвропейським літнім часом)</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p><strong>Объекты Date создаются с помощью <code>new Date()</code> конструктора.</strong></p>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><p><strong>4 способа</strong> создания нового объекта даты:</p>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><p><code>new Date()</code></p>
+<hr>
+<p><code>new Date(year, month, day, hours, minutes, seconds, milliseconds)</code></p>
+<hr>
+<p><code>new Date(milliseconds)</code></p>
+<hr>
+<p><code>new Date(date string)</code></p>
+<hr>
+<h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><p><code>new Date()</code> создает новый объект даты с <strong>текущей датой и временем</strong> :</p>
+<hr>
+<h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><p><code>new Date(year, month, ...)</code>создает новый объект даты с <strong>указанной датой и временем .</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var d &#x3D; new Date(2018, 11, 24, 10, 33, 30, 0);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; d;</span><br><span class="line">&lt;&#x2F;script&gt;                                        &#x2F;&#x2F;Mon Dec 24 2018 10:33:30 GMT+0200 (за східноєвропейським стандартним часом)</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="-6"><a href="#-6" class="headerlink" title=""></a></h1><p><code>new Date(dateString)</code> создает новый объект датa <strong>из строки даты :</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var d &#x3D; new Date(&quot;October 13, 2014 11:13:00&quot;);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; d;</span><br><span class="line">&lt;&#x2F;script&gt;                                        &#x2F;&#x2F;Mon Oct 13 2014 11:13:00 GMT+0300 (за східноєвропейським літнім часом)</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="-7"><a href="#-7" class="headerlink" title=""></a></h1><p><code>new Date(milliseconds)</code> создает новый объект даты как <strong>нулевое время плюс миллисекунды :</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var d &#x3D; new Date(0);</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; d;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="-8"><a href="#-8" class="headerlink" title=""></a></h1><h2 id="Методы-даты"><a href="#Методы-даты" class="headerlink" title="Методы даты"></a>Методы даты</h2><p>Когда объект Date создается, ряд <strong>методов</strong> позволяет вам работать с ним.</p>
+<h1 id="-9"><a href="#-9" class="headerlink" title=""></a></h1><h1 id="-10"><a href="#-10" class="headerlink" title=""></a></h1><h2 id="Отображение-дат"><a href="#Отображение-дат" class="headerlink" title="Отображение дат"></a>Отображение дат</h2><h1 id="-11"><a href="#-11" class="headerlink" title=""></a></h1><p>JavaScript (по умолчанию) будет выводить даты в формате полнотекстовой строки:</p>
+<h1 id="-12"><a href="#-12" class="headerlink" title=""></a></h1><p>Когда вы отображаете объект даты в HTML, он автоматически преобразуется в строку с помощью <code>toString()</code>метода.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d &#x3D; new Date();</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; d;</span><br></pre></td></tr></table></figure>
+
+<p>Такой же как:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d &#x3D; new Date();</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; d.toString();  &#x2F;&#x2F;Tue Apr 14 2020 14:35:07 GMT+0300 (за східноєвропейським літнім часом)</span><br><span class="line">&#96;&#96;&#96; </span><br><span class="line"># </span><br><span class="line">&#96;toUTCString()&#96;Метод преобразует дату в строку UTC (стандартный дисплей даты).</span><br></pre></td></tr></table></figure>
+<p>var d = new Date();<br>document.getElementById(“demo”).innerHTML = d.toUTCString();   //Tue, 14 Apr 2020 11:36:13 GMT</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># </span><br><span class="line">&#96;toDateString()&#96;Метод преобразует дату в более читаемый формат:</span><br></pre></td></tr></table></figure>
+<p>var d = new Date();<br>document.getElementById(“demo”).innerHTML = d.toDateString();       //Tue Apr 14 2020<br>``` </p>
+
 </article>
 
 <div id="paginator">

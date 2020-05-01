@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          Type Conversion Преобразование - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods">JS Number Methods</a></p>
+</li>
+<li><p><a href="/mysite/arrayMethods">JS Array Methods</a></p>
+</li>
+<li><p><a href="/mysite/сортировкаМассивов">JS Сортировка Массивов</a></p>
+</li>
+<li><p><a href="/mysite/итерацияМассива">JS Итерация Массива</a></p>
+</li>
+<li><p><a href="/mysite/даты">JS Даты</a></p>
+</li>
+<li><p><a href="/mysite/форматДаты">JS Формат Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыПолученияДаты">JS Методы Получения Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыУстановкиДаты">JS Методы Установки Даты</a></p>
+</li>
+<li><p><a href="/mysite/математическийОбъект">JS Математический Объект</a></p>
+</li>
+<li><p><a href="/mysite/случайный">JS Случайный</a></p>
+</li>
+<li><p><a href="/mysite/булевые">JS Булевые</a></p>
+</li>
+<li><p><a href="/mysite/сравнения">JS Сравнения</a></p>
+</li>
+<li><p><a href="/mysite/условия">JS Условия</a></p>
+</li>
+<li><p><a href="/mysite/switchПереключатель">JS Switch Переключатель</a></p>
+</li>
+<li><p><a href="/mysite/breakContinue">JS Break Continue</a></p>
+</li>
+<li><p><a href="/mysite/typeConversionПреобразование">JS Type Conversion Преобразование</a></p>
+</li>
+<li><p><a href="/mysite/bitwise">JS Bitwise</a></p>
+</li>
+<li><p><a href="/mysite/регулярныеВыражения">JS Регулярные Выражения</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>Type Conversion Преобразование</h1>
+  <hr>
+<p>Number () конвертирует в Number, String () конвертирует в String, Boolean () конвертирует в Boolean.</p>
+<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="Типы-данных-JavaScript"><a href="#Типы-данных-JavaScript" class="headerlink" title="Типы данных JavaScript"></a>Типы данных JavaScript</h2><p><strong>В JavaScript есть 5 различных типов данных, которые могут содержать значения:</strong><br><code>string</code><br> <code>number</code><br> <code>boolean</code><br> <code>object</code><br> <code>function</code></p>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p><strong>Есть 6 типов объектов:</strong><br> <code>Object</code><br> <code>Date</code><br><code>Array</code><br> <code>String</code><br> <code>Number</code><br> <code>Boolean</code></p>
+<p><strong>И 2 типа данных, которые не могут содержать значения:</strong><br> <code>null</code><br> <code>undefined</code></p>
+<h2 id="Тип-оператора"><a href="#Тип-оператора" class="headerlink" title="Тип оператора"></a>Тип оператора</h2><p>использовать  <code>typeof</code>оператор, чтобы найти тип данных переменной JavaScript.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;       </span><br><span class="line">  typeof &quot;john&quot; + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof 3.14 + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof NaN + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof false + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof [1,2,3,4] + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof &#123;name:&#39;john&#39;, age:34&#125; + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof new Date() + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof function () &#123;&#125; + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof myCar + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  typeof null;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">The JavaScript typeof Operator</span><br><span class="line">The typeof operator returns the type of a variable, object, function or expression.</span><br><span class="line"></span><br><span class="line">string</span><br><span class="line">number</span><br><span class="line">number</span><br><span class="line">boolean</span><br><span class="line">object</span><br><span class="line">object</span><br><span class="line">object</span><br><span class="line">function</span><br><span class="line">undefined</span><br><span class="line">object</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Пожалуйста-обратите-внимание"><a href="#Пожалуйста-обратите-внимание" class="headerlink" title="Пожалуйста, обратите внимание:"></a>Пожалуйста, обратите внимание:</h2><p>Тип данных NaN это число<br>Тип данных массива - объект<br>Тип данных даты - объект<br>Тип данных null является объектом<br>Тип данных неопределенной переменной не <strong>определен</strong><br>Тип данных переменной, которой не присвоено значение, также не <strong>определен</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Вы не можете использовать, typeofчтобы определить, является ли объект JavaScript массивом (или датой).</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Тип-данных-typeof"><a href="#Тип-данных-typeof" class="headerlink" title="Тип данных typeof"></a>Тип данных typeof</h2><p><code>typeof</code> Оператор не является переменной. Это оператор. Операторы (+ - * /) не имеют данных любого типа.</p>
+<p>Но <code>typeof</code> оператор всегда возвращает строку (содержащую тип операнда).</p>
+<hr>
+<h2 id="Свойство-конструктора"><a href="#Свойство-конструктора" class="headerlink" title="Свойство конструктора"></a>Свойство конструктора</h2><p><code>constructor</code> Свойство возвращает функцию конструктора для всех переменных JavaScript.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; </span><br><span class="line">  &quot;john&quot;.constructor + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  (3.14).constructor + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  false.constructor + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  [1,2,3,4].constructor + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  &#123;name:&#39;john&#39;, age:34&#125;.constructor + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  new Date().constructor + &quot;&lt;br&gt;&quot; +</span><br><span class="line">  function () &#123;&#125;.constructor;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">The constructor property returns the constructor function for a variable or an object.</span><br><span class="line"></span><br><span class="line">function String() &#123; [native code] &#125;</span><br><span class="line">function Number() &#123; [native code] &#125;</span><br><span class="line">function Boolean() &#123; [native code] &#125;</span><br><span class="line">function Array() &#123; [native code] &#125;</span><br><span class="line">function Object() &#123; [native code] &#125;</span><br><span class="line">function Date() &#123; [native code] &#125;</span><br><span class="line">function Function() &#123; [native code] &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>проверить свойство конструктора, чтобы узнать, является ли объект Array</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This &quot;home made&quot; isArray() function returns true when used on an array:&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; isArray(fruits);</span><br><span class="line"></span><br><span class="line">function isArray(myArray) &#123;</span><br><span class="line">  return myArray.constructor.toString().indexOf(&quot;Array&quot;) &gt; -1;              &#x2F;&#x2F;true</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>можете проверить, является ли объект функцией Array</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var fruits &#x3D; [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; isArray(fruits);</span><br><span class="line"></span><br><span class="line">function isArray(myArray) &#123;</span><br><span class="line">  return myArray.constructor &#x3D;&#x3D;&#x3D; Array;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">JavaScript Array Object</span><br><span class="line">This &quot;home made&quot; isArray() function returns true when used on an array:</span><br><span class="line"></span><br><span class="line">true</span><br></pre></td></tr></table></figure>
+
+<p><strong>проверить свойство конструктора, чтобы узнать, является ли объект Date</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var myDate &#x3D; new Date();</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; isDate(myDate);</span><br><span class="line"></span><br><span class="line">function isDate(myDate) &#123;</span><br><span class="line">  return myDate.constructor.toString().indexOf(&quot;Date&quot;) &gt; -1;   &#x2F;&#x2F;true</span><br><span class="line">&#125; </span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="можете-проверить-является-ли-объект-функцией-Date"><a href="#можете-проверить-является-ли-объект-функцией-Date" class="headerlink" title="можете проверить, является ли объект функцией Date "></a>можете проверить, является ли объект функцией Date </h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var myDate &#x3D; new Date();</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; isDate(myDate);</span><br><span class="line"></span><br><span class="line">function isDate(myDate) &#123;</span><br><span class="line">  return myDate.constructor &#x3D;&#x3D;&#x3D; Date;     &#x2F;&#x2F;true</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Преобразование-типов-JavaScript"><a href="#Преобразование-типов-JavaScript" class="headerlink" title="Преобразование типов JavaScript"></a>Преобразование типов JavaScript</h2><p>Переменные JavaScript могут быть преобразованы в новую переменную и другой тип данных:</p>
+<ul>
+<li>С помощью функции JavaScript</li>
+<li>Автоматически по самому JavaScript</li>
+</ul>
+<hr>
+<h2 id="Преобразование-чисел-в-строки"><a href="#Преобразование-чисел-в-строки" class="headerlink" title="Преобразование чисел в строки"></a>Преобразование чисел в строки</h2><p>Глобальный метод String()может преобразовывать числа в строки.</p>
+<p>Он может быть использован для любого типа чисел, литералов, переменных или выражений:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; 123;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">  String(x) + &quot;&lt;br&gt;&quot; +           &#x2F;&#x2F;123</span><br><span class="line">  String(123) + &quot;&lt;br&gt;&quot; +         &#x2F;&#x2F;123</span><br><span class="line">  String(100 + 23);              &#x2F;&#x2F;123</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Метод Number <code>toString()</code>cделает то же самое.</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; 123;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">  x.toString() + &quot;&lt;br&gt;&quot; +                  &#x2F;&#x2F;123</span><br><span class="line">   (123).toString() + &quot;&lt;br&gt;&quot; +              &#x2F;&#x2F;123</span><br><span class="line">   (100 + 23).toString();                  &#x2F;&#x2F;123</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><code>toExponential()</code>                    Возвращает строку с округленным числом и написанную с использованием экспоненциальной записи.</p>
+<hr>
+<p><code>toFixed()</code>                          Возвращает строку с округленным числом и записанным с указанным количеством десятичных знаков.</p>
+<hr>
+<p><code>toPrecision()</code>                      Возвращает строку с записанным числом указанной длины</p>
+<hr>
+<h2 id="Преобразование-логических-значений-в-строки"><a href="#Преобразование-логических-значений-в-строки" class="headerlink" title="Преобразование логических значений в строки"></a>Преобразование логических значений в строки</h2><p>Глобальный метод <code>String()</code> может преобразовывать логические значения в строки.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String(false)      &#x2F;&#x2F; returns &quot;false&quot;</span><br><span class="line">String(true)       &#x2F;&#x2F; returns &quot;true&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="Булевый-метод-toString-cделает-то-же-самое"><a href="#Булевый-метод-toString-cделает-то-же-самое" class="headerlink" title="Булевый метод toString()cделает то же самое."></a>Булевый метод <code>toString()</code>cделает то же самое.</h2><p>false.toString()   // returns “false”<br>true.toString()    // returns “true”</p>
+<hr>
+<h2 id="Преобразование-дат-в-строки"><a href="#Преобразование-дат-в-строки" class="headerlink" title="Преобразование дат в строки"></a>Преобразование дат в строки</h2><p>Глобальный метод <code>String()</code> может конвертировать даты в строки.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String(Date())  &#x2F;&#x2F; returns &quot;Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)&quot;</span><br></pre></td></tr></table></figure>
+<p>Метод Date <code>toString()</code>делает то же самое.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Date().toString()  &#x2F;&#x2F; returns &quot;Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)&quot;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>getDate()    Get the day as a number (1-31)<br>getDay()    Get the weekday a number (0-6)<br>getFullYear()    Get the four digit year (yyyy)<br>getHours()    Get the hour (0-23)<br>getMilliseconds()    Get the milliseconds (0-999)<br>getMinutes()    Get the minutes (0-59)<br>getMonth()    Get the month (0-11)<br>getSeconds()    Get the seconds (0-59)<br>getTime()    Get the time (milliseconds since January 1, 1970)</p>
+<hr>
+<h2 id="Преобразование-строк-в-числа"><a href="#Преобразование-строк-в-числа" class="headerlink" title="Преобразование строк в числа"></a>Преобразование строк в числа</h2><p>Глобальный метод<code>Number()</code> может преобразовывать строки в числа.</p>
+<p>Строки, содержащие числа (например, «3.14»), преобразуются в числа (например, 3.14).</p>
+<p>Пустые строки конвертируются в 0.</p>
+<p>Все остальное конвертируется в NaN(не число).</p>
+<p>Number(“3.14”)    // returns 3.14<br>Number(“ “)       // returns 0<br>Number(“”)        // returns 0<br>Number(“99 88”)   // returns NaN</p>
+<hr>
+<p><code>parseFloat()</code>    Parses a string and returns a floating point number  (Разбирает строку и возвращает число с плавающей запятой)</p>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><p><code>parseInt()</code>      Parses a string and returns an integer      (Разбирает строку и возвращает целое число)</p>
+<hr>
+<h2 id="Унарный-Оператор-The-Unary-Operator"><a href="#Унарный-Оператор-The-Unary-Operator" class="headerlink" title="Унарный + Оператор     (The Unary + Operator)"></a>Унарный + Оператор     (The Unary + Operator)</h2><p><strong>Унарный оператор</strong> + может быть использован для преобразования переменного в число:</p>
+<figure class="highlight plain"><figcaption><span>onclick</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;p id&#x3D;&quot;demo&quot;&gt;&lt;&#x2F;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction() &#123;</span><br><span class="line">  var y &#x3D; &quot;5&quot;;                                                                  &#x2F;&#x2F;string</span><br><span class="line">  var x &#x3D; + y;                                                                  &#x2F;&#x2F;number</span><br><span class="line">  document.getElementById(&quot;demo&quot;).innerHTML &#x3D; typeof y + &quot;&lt;br&gt;&quot; + typeof x;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>Если переменная не может быть преобразована, она все равно станет числом, но со значением NaN (не числом):<br>var y = “John”;   // y is a string<br>var x = + y;      // x is a number (NaN)</p>
+<hr>
+<h2 id="Преобразование-логических-чисел-в-числа"><a href="#Преобразование-логических-чисел-в-числа" class="headerlink" title="Преобразование логических чисел в числа"></a>Преобразование логических чисел в числа</h2><p>Глобальный метод<code>Number()</code> также может преобразовывать логические значения в числа.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Number(false)     &#x2F;&#x2F; returns 0</span><br><span class="line">Number(true)      &#x2F;&#x2F; returns 1</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Преобразование-дат-в-числа"><a href="#Преобразование-дат-в-числа" class="headerlink" title="Преобразование дат в числа"></a>Преобразование дат в числа</h2><p>Глобальный метод <code>Number()</code> может быть использован для преобразования дат в числа.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d &#x3D; new Date();</span><br><span class="line">Number(d)          &#x2F;&#x2F; returns 1404568027739</span><br></pre></td></tr></table></figure>
+<h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><p>Метод даты <code>getTime()</code> делает то же самое.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d &#x3D; new Date();</span><br><span class="line">d.getTime()        &#x2F;&#x2F; returns 1404568027739</span><br></pre></td></tr></table></figure>
+<h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><hr>
+<h1 id="-6"><a href="#-6" class="headerlink" title=""></a></h1><h2 id="Автоматическое-преобразование-типов"><a href="#Автоматическое-преобразование-типов" class="headerlink" title="Автоматическое преобразование типов"></a>Автоматическое преобразование типов</h2><p>Когда JavaScript пытается работать с «неправильным» типом данных, он пытается преобразовать значение в «правильный» тип.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var x &#x3D; [];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D;</span><br><span class="line">(5 + null) + &quot;&lt;br&gt;&quot;  +</span><br><span class="line">(&quot;5&quot; + null) + &quot;&lt;br&gt;&quot; +</span><br><span class="line">(&quot;5&quot; + 2) + &quot;&lt;br&gt;&quot; +</span><br><span class="line">(&quot;5&quot; - 2) + &quot;&lt;br&gt;&quot; +</span><br><span class="line">(&quot;5&quot; * &quot;2&quot;) + &quot;&lt;br&gt;&quot; +</span><br><span class="line">(&quot;5&quot; &#x2F; &quot;2&quot;) + &quot;&lt;br&gt;&quot;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>Результат не всегда то, что вы ожидаете:</p>
+<p>5 + null    // returns 5         because null is converted to 0<br>“5” + null  // returns “5null”   because null is converted to “null”<br>“5” + 2     // returns “52”      because 2 is converted to “2”<br>“5” - 2     // returns 3         because “5” is converted to 5<br>“5” * “2”   // returns 10        because “5” and “2” are converted to 5 and 2</p>
+<hr>
+<h2 id="Автоматическое-преобразование-строк"><a href="#Автоматическое-преобразование-строк" class="headerlink" title="Автоматическое преобразование строк"></a>Автоматическое преобразование строк</h2><p>JavaScript автоматически вызывает <code>toString()</code> функцию переменной, когда вы пытаетесь «вывести» объект или переменную:</p>
+<hr>
+<p><strong>document.getElementById(“demo”).innerHTML = myVar;</strong></p>
+<p>// if myVar = {name:”Fjohn”}  // toString converts to “[object Object]”<br>// if myVar = [1,2,3,4]       // toString converts to “1,2,3,4”<br>// if myVar = new Date()      // toString converts to “Fri Jul 18 2014 09:08:55 GMT+0200”</p>
+<hr>
+<p>Числа и логические значения также преобразуются, но это не очень заметно:</p>
+<p>// if myVar = 123             // toString converts to “123”<br>// if myVar = true            // toString converts to “true”<br>// if myVar = false           // toString converts to “false”</p>
+<hr>
+<h2 id="Таблица-преобразования-типов-JavaScript"><a href="#Таблица-преобразования-типов-JavaScript" class="headerlink" title="Таблица преобразования типов JavaScript"></a>Таблица преобразования типов JavaScript</h2><p>( <a href="https://www.w3schools.com/js/js_type_conversion.asp" target="_blank" rel="noopener">https://www.w3schools.com/js/js_type_conversion.asp</a> )</p>
+<hr>
+
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-29</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>

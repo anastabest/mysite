@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/mysite/favicon.png" />
+    
+
+    <title>
+        
+          Bitwise - BLOG LEARNING PROGRAMMING
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/mysite/css/book.css">
+
+    
+<script src="/mysite/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/mysite/">
+    <img src="/mysite/favicon.png">
+    <span>BLOG LEARNING PROGRAMMING</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="MENU-WEBSITE"><a href="#MENU-WEBSITE" class="headerlink" title="MENU WEBSITE"></a>MENU WEBSITE</h1><h1 id="JAVA-SCRIPT"><a href="#JAVA-SCRIPT" class="headerlink" title="JAVA SCRIPT"></a>JAVA SCRIPT</h1><ul>
+<li><p><a href="/mysite/about">JS About</a></p>
+</li>
+<li><p><a href="/mysite/functions">JS Functions</a></p>
+</li>
+<li><p><a href="/mysite/display">JS Display</a></p>
+</li>
+<li><p><a href="/mysite/statements">JS Statements</a></p>
+</li>
+<li><p><a href="/mysite/keywords">JS Keywords</a></p>
+</li>
+<li><p><a href="/mysite/values">JS Values</a></p>
+</li>
+<li><p><a href="/mysite/DataTypes">JS Data Types</a></p>
+</li>
+<li><p><a href="/mysite/arrays">JS Arrays</a></p>
+</li>
+<li><p><a href="/mysite/objects">JS Objects</a></p>
+</li>
+<li><p><a href="/mysite/Events">JS Events</a></p>
+</li>
+<li><p><a href="/mysite/Strings">JS Strings</a></p>
+</li>
+<li><p><a href="/mysite/stringMethods">JS String Methods</a></p>
+</li>
+<li><p><a href="/mysite/Numbers">JS Numbers</a></p>
+</li>
+<li><p><a href="/mysite/numberMethods">JS Number Methods</a></p>
+</li>
+<li><p><a href="/mysite/arrayMethods">JS Array Methods</a></p>
+</li>
+<li><p><a href="/mysite/сортировкаМассивов">JS Сортировка Массивов</a></p>
+</li>
+<li><p><a href="/mysite/итерацияМассива">JS Итерация Массива</a></p>
+</li>
+<li><p><a href="/mysite/даты">JS Даты</a></p>
+</li>
+<li><p><a href="/mysite/форматДаты">JS Формат Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыПолученияДаты">JS Методы Получения Даты</a></p>
+</li>
+<li><p><a href="/mysite/методыУстановкиДаты">JS Методы Установки Даты</a></p>
+</li>
+<li><p><a href="/mysite/математическийОбъект">JS Математический Объект</a></p>
+</li>
+<li><p><a href="/mysite/случайный">JS Случайный</a></p>
+</li>
+<li><p><a href="/mysite/булевые">JS Булевые</a></p>
+</li>
+<li><p><a href="/mysite/сравнения">JS Сравнения</a></p>
+</li>
+<li><p><a href="/mysite/условия">JS Условия</a></p>
+</li>
+<li><p><a href="/mysite/switchПереключатель">JS Switch Переключатель</a></p>
+</li>
+<li><p><a href="/mysite/breakContinue">JS Break Continue</a></p>
+</li>
+<li><p><a href="/mysite/typeConversionПреобразование">JS Type Conversion Преобразование</a></p>
+</li>
+<li><p><a href="/mysite/bitwise">JS Bitwise</a></p>
+</li>
+<li><p><a href="/mysite/регулярныеВыражения">JS Регулярные Выражения</a></p>
+<h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1></li>
+<li><p><a href="/mysite/deploy.git">diploy.git</a></p>
+</li>
+</ul>
+<h1 id="RANDOM-NOTES"><a href="#RANDOM-NOTES" class="headerlink" title="RANDOM NOTES"></a>RANDOM NOTES</h1><ul>
+<li><a href="/mysite/randomNotes">random notes</a></li>
+</ul>
+<h1 id="ADMIN"><a href="#ADMIN" class="headerlink" title="ADMIN"></a>ADMIN</h1>
+</div>
+
+
+<script src="/mysite/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>Bitwise</h1>
+  <h2 id="Побитовые-операции-JavaScript"><a href="#Побитовые-операции-JavaScript" class="headerlink" title="Побитовые операции JavaScript"></a>Побитовые операции JavaScript</h2><hr>
+<h2 id="Битовые-операторы-JavaScript"><a href="#Битовые-операторы-JavaScript" class="headerlink" title="Битовые операторы JavaScript"></a>Битовые операторы JavaScript</h2><p><strong>Operator    Name    Description</strong></p>
+<p>&amp; <strong>__ (AND) _</strong> Sets each bit to 1 if both bits are 1<br>Устанавливает каждый бит в 1, если оба бита равны 1</p>
+<hr>
+<p>| __ (OR) ___ Sets each bit to 1 if one of two bits is 1<br>Устанавливает каждый бит в 1, если один из двух битов равен 1</p>
+<hr>
+<p>^  <strong>_ (XOR) _</strong> Sets each bit to 1 if only one of two bits is 1<br>Устанавливает каждый бит в 1, если только один из двух битов равен 1</p>
+<hr>
+<p>~ <strong>_  (NOT) _</strong> Inverts all the bits<br>Инвертирует все биты</p>
+<hr>
+<p>&lt;&lt; <strong>_(Zero fill left shift) _</strong>    Shifts left by pushing zeros in from the right and let the leftmost bits fall off<br> Сдвиг влево, нажав нули справа, и пусть самые левые биты падают</p>
+<hr>
+<blockquote>
+<blockquote>
+<p><strong>_(Signed right shift)</strong> Shifts right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off<br>Сдвиг влево, толкая нули справа и оставляя самые левые биты</p>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="JavaScript-побитовое-И-amp"><a href="#JavaScript-побитовое-И-amp" class="headerlink" title="JavaScript побитовое И (&amp;)"></a>JavaScript побитовое И (&amp;)</h2><p>Побитовое И возвращает 1, только если оба бита равны 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; 5 &amp; 1;         &#x2F;&#x2F;1</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="JavaScript-Побитовое-ИЛИ"><a href="#JavaScript-Побитовое-ИЛИ" class="headerlink" title="JavaScript Побитовое ИЛИ (|)"></a>JavaScript Побитовое ИЛИ (|)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; 5 | 1; &#x2F;&#x2F;5</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="JavaScript-побитовый-XOR"><a href="#JavaScript-побитовый-XOR" class="headerlink" title="JavaScript побитовый XOR (^)"></a>JavaScript побитовый XOR (^)</h2><p>Побитовый XOR возвращает 1, если биты разные:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; 5 ^ 1; &#x2F;&#x2F;4</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="JavaScript-побитовый-НЕ"><a href="#JavaScript-побитовый-НЕ" class="headerlink" title="JavaScript побитовый НЕ (~)"></a>JavaScript побитовый НЕ (~)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; ~ 5;  &#x2F;&#x2F;-6</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="JavaScript-нулевое-заполнение-битовое-смещение-влево-lt-lt"><a href="#JavaScript-нулевое-заполнение-битовое-смещение-влево-lt-lt" class="headerlink" title="JavaScript (нулевое заполнение) битовое смещение влево (&lt;&lt;)"></a>JavaScript (нулевое заполнение) битовое смещение влево (&lt;&lt;)</h2><p>Это смещение нуля влево. Один или несколько нулевых битов вставляются справа, и самые левые биты падают:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; 5 &lt;&lt; 1;   &#x2F;&#x2F;10</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="JavaScript-сохранение-знака-Битовый-сдвиг-вправо-gt-gt"><a href="#JavaScript-сохранение-знака-Битовый-сдвиг-вправо-gt-gt" class="headerlink" title="JavaScript (сохранение знака) Битовый сдвиг вправо (&gt;&gt;)"></a>JavaScript (сохранение знака) Битовый сдвиг вправо (&gt;&gt;)</h2><p>Это знак сохранения правого сдвига. Копии самого левого бита вставляются слева, а самые правые биты падают:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; -5 &gt;&gt; 1;  &#x2F;&#x2F;-3</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="JavaScript-нулевая-заливка-вправо-Shift-gt-gt-gt"><a href="#JavaScript-нулевая-заливка-вправо-Shift-gt-gt-gt" class="headerlink" title="JavaScript (нулевая заливка) вправо Shift (&gt;&gt;&gt;)"></a>JavaScript (нулевая заливка) вправо Shift (&gt;&gt;&gt;)</h2><p>Это смещение нуля вправо. Один или несколько нулевых битов вводятся слева, а самые правые биты падают:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; 5 &gt;&gt;&gt; 1;   &#x2F;&#x2F;2</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Преобразование-десятичного-числа-в-двоичное"><a href="#Преобразование-десятичного-числа-в-двоичное" class="headerlink" title="Преобразование десятичного числа в двоичное"></a>Преобразование десятичного числа в двоичное</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; dec2bin(-5);        &#x2F;&#x2F;11111111111111111111111111111011</span><br><span class="line">function dec2bin(dec)&#123;</span><br><span class="line">  return (dec &gt;&gt;&gt; 0).toString(2);</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Преобразование-двоичного-в-десятичное"><a href="#Преобразование-двоичного-в-десятичное" class="headerlink" title="Преобразование двоичного в десятичное"></a>Преобразование двоичного в десятичное</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML &#x3D; bin2dec(101);   &#x2F;&#x2F;5</span><br><span class="line">function bin2dec(bin)&#123;</span><br><span class="line">  return parseInt(bin, 2).toString(10);</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="A"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anastabest</div>
+      <div>2020-04-30</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/mysite/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/mysite/js/book.js"></script>
